@@ -1,0 +1,3 @@
+![Penny4NASA](http://www.penny4nasa.org/wp-content/themes/stars/head23.png)
+
+We uphold the importance of NASA by highlighting scientific exploration, research and education as paramount to society’s success. NASA’s current budget, at 0.5% of the total U.S. budget, does not reflect the hugely important economic, technological and inspirational resource that this agency has been in its 50+ year history. This is the people saying that as a society, we want our tax dollars to reflect the importance of scientific exploration, research and education; and 0.5% doesn’t cut it. The NASA budget must be increased to at least 1% of the U.S. federal budget.
