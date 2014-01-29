@@ -3,3 +3,11 @@ node_js:
  - "0.11"
  - "0.10"
  - "0.8"
+before_script:
+ # install dependencies
+ - gem update --system
+ - npm install -g grunt-cli bower
+script:
+ # We want to gate on passing tests and a successful build
+ - bower install
+ - grunt
