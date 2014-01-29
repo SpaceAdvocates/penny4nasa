@@ -1,14 +1,14 @@
-# As Yeoman assumes the usage of Bower and Grunt, ignore the below:
+# Yeoman
 bower_components
 node_modules
 
 # Ignore automatically generated cruft
 *.log
 .sass-cache
+.tmp
 
 # Ignore config
 local-config.php
-
 
 # Operating system files
 .Spotlight-V100

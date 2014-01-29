@@ -1,7 +1,8 @@
 {
-	"name": "penny4nasa",
-	"dependencies": {
-		"jquery": "~1.10.2"
-	},
-	"devDependencies": {}
+  "name": "penny4nasa",
+  "dependencies": {
+    "jquery": "~1.10.2",
+    "normalize-css": "~3.0.0"
+  },
+  "devDependencies": {}
 }

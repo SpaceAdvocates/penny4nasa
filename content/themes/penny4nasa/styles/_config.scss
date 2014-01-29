@@ -1,0 +1,86 @@
+/////// Config defaults for site colors ///////
+// -----------------------------------------------------------------------------
+$black: #000000;
+$white: #ffffff;
+
+$off-white: #efefef;
+
+$light-grey: rgb(247, 247, 247);
+$grey: rgb(206, 207, 206);
+$dark-grey: rgb(75, 82, 84);
+
+$facebook-color: #3b5998;
+$twitter-color: #00acee;
+$google-plus-color: #dd4b39;
+$rss-color: #ee802f;
+
+$primary-color: $dark-grey;
+$secondary-color: $grey;
+$tertiary-color: $light-grey;
+
+$primary-text-color: $primary-color;
+$secondary-text-color: $tertiary-color;
+
+$default-background-color: $light-grey;
+
+/////// Config defaults for site border style ///////
+// -----------------------------------------------------------------------------
+$default-border-color: $secondary-color;
+$default-border-width: 1px;
+$default-border-style: solid;
+$default-border: $default-border-width $default-border-style $default-border-color;
+
+$default-border-radius: 3px;
+
+/////// Page dimension configuration ///////
+// -----------------------------------------------------------------------------
+
+/////// Typography configuration ///////
+// -----------------------------------------------------------------------------
+$base-font-size: 16px;
+$small-font-size: 12px;
+
+$base-line-height: 1;
+
+$default-font-family: Helvetica, Arial, sans-serif;
+
+/////// Path configuration ///////
+// -----------------------------------------------------------------------------
+$bower-components-path: "bower_components";
+
+/////// Font-awesome configuration ///////
+// -----------------------------------------------------------------------------
+$fa-font-path: $bower-components-path + "/font-awesome/fonts";
+
+/////// Config defaults for buttons ///////
+// -----------------------------------------------------------------------------
+
+/////// Susy configuration ///////
+// -----------------------------------------------------------------------------
+$total-columns: 12;						// a 12-column grid
+$column-width: 5em;						// each column is 5em wide
+$gutter-width: 1em;						// 1em gutters between columns
+$grid-padding: $gutter-width;	// grid-padding equal to gutters
+$container-style: fluid;
+
+/////// UI @media breakpoint defaults ///////
+// -----------------------------------------------------------------------------
+$small-screen: 768px;
+$medium-screen: 1280px;
+$large-screen: 1440px;
+
+$screen: "only screen";
+$small: "only screen and (min-width: #{$small-screen})";
+$medium: "only screen and (min-width: #{$medium-screen})";
+$large: "only screen and (min-width: #{$large-screen})";
+$landscape: "only screen and (orientation: landscape)";
+$portrait: "only screen and (orientation: portrait)";
+
+/////// Site Icons and Images ///////
+// -----------------------------------------------------------------------------
+
+/////// Animation configuration ///////
+// -----------------------------------------------------------------------------
+
+/////// Misc configuration ///////
+// -----------------------------------------------------------------------------
