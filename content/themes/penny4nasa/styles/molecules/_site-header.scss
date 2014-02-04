@@ -1,8 +1,8 @@
 .site-header {
 	font-family: $header-font-family;
-	// font-weight: bold;
 	color: $white;
 	background-color: $black;
+	text-transform: uppercase;
 
 	a {
 		@extend %clean-link;
@@ -14,30 +14,32 @@
 		display: flex;
 		flex-direction: row;
 	}
-	.site-title {
-		@include span-columns(5);
-		display: flex;
+}
+
+.site-title {
+	@include span-columns(5);
+	display: flex;
+}
+
+.site-navigation {
+	@include span-columns(7);
+	@include omega;
+	display: flex;
+	align-items: center;
+
+	.menu-site-menu-container{
+		width: 100%;
 	}
-	.site-navigation {
-		@include span-columns(7);
-		@include omega;
+	.nav-menu {
 		display: flex;
-		align-items: center;
+		flex-direction: row;
 
-		.menu-site-menu-container{
-			width: 100%;
-		}
-		.nav-menu {
-			display: flex;
-			flex-direction: row;
+		.menu-item {
+			width: 20%;
+			text-align: center;
 
-			.menu-item {
-				width: 20%;
-				text-align: center;
-
-				&:last-child {
-					color: $red;
-				}
+			&:last-child {
+				color: $red;
 			}
 		}
 	}

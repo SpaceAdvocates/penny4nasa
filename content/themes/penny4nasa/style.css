@@ -63,6 +63,49 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   display: block;
 }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joseph\/Development\/penny4nasa\/content\/themes\/penny4nasa\/styles\/utils\/_sticky-footer\.scss}line{font-family:\000033}}
+html, body {
+  height: 100%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joseph\/Development\/penny4nasa\/content\/themes\/penny4nasa\/styles\/utils\/_sticky-footer\.scss}line{font-family:\000037}}
+body {
+  margin: 0;
+  padding: 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joseph\/Development\/penny4nasa\/content\/themes\/penny4nasa\/styles\/utils\/_sticky-footer\.scss}line{font-family:\0000312}}
+body {
+  width: 100%;
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  margin: 0 0 0 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joseph\/Development\/penny4nasa\/content\/themes\/penny4nasa\/styles\/utils\/_sticky-footer\.scss}line{font-family:\0000320}}
+.site-footer {
+  width: 100%;
+  height: 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joseph\/Development\/penny4nasa\/content\/themes\/penny4nasa\/styles\/utils\/_sticky-footer\.scss}line{font-family:\0000325}}
+.site-content {
+  width: 100%;
+  padding: 0 0 0 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joseph\/Development\/penny4nasa\/content\/themes\/penny4nasa\/styles\/utils\/_ui-patterns\.scss}line{font-family:\000031}}
+body {
+  font-size: 16px;
+  background: #0d344d;
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #0d344d), color-stop(100%, #111111));
+  background: -webkit-linear-gradient(top, #0d344d, #111111);
+  background: -moz-linear-gradient(top, #0d344d, #111111);
+  background: -o-linear-gradient(top, #0d344d, #111111);
+  background: linear-gradient(top, #0d344d, #111111);
+}
+
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joseph\/Development\/penny4nasa\/content\/themes\/penny4nasa\/styles\/quarks\/_headers\.scss}line{font-family:\000031}}
 h1, h2, h3, h4, h5, h6 {
   font-family: "PT Sans", Helvetica, Arial, sans-serif;
@@ -146,9 +189,8 @@ a:hover {
   float: left;
   line-height: 1;
   padding: 0.5rem;
-  text-transform: uppercase;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joseph\/Development\/penny4nasa\/content\/themes\/penny4nasa\/styles\/atoms\/_site-title\.scss}line{font-family:\0000319}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joseph\/Development\/penny4nasa\/content\/themes\/penny4nasa\/styles\/atoms\/_site-title\.scss}line{font-family:\0000318}}
 .site-title .title span {
   color: #ff595e;
 }
@@ -158,6 +200,7 @@ a:hover {
   font-family: "PT Sans", Helvetica, Arial, sans-serif;
   color: #eeeeee;
   background-color: #111111;
+  text-transform: uppercase;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joseph\/Development\/penny4nasa\/content\/themes\/penny4nasa\/styles\/molecules\/_site-header\.scss}line{font-family:\0000310}}
 .site-header .container {
@@ -182,16 +225,18 @@ a:hover {
   display: table;
   clear: both;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joseph\/Development\/penny4nasa\/content\/themes\/penny4nasa\/styles\/molecules\/_site-header\.scss}line{font-family:\0000317}}
-.site-header .site-title {
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joseph\/Development\/penny4nasa\/content\/themes\/penny4nasa\/styles\/molecules\/_site-header\.scss}line{font-family:\0000319}}
+.site-title {
   width: 40.84507%;
   float: left;
   margin-right: 1.40845%;
   display: inline;
   display: flex;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joseph\/Development\/penny4nasa\/content\/themes\/penny4nasa\/styles\/molecules\/_site-header\.scss}line{font-family:\0000321}}
-.site-header .site-navigation {
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joseph\/Development\/penny4nasa\/content\/themes\/penny4nasa\/styles\/molecules\/_site-header\.scss}line{font-family:\0000324}}
+.site-navigation {
   width: 57.74648%;
   float: left;
   margin-right: 1.40845%;
@@ -203,21 +248,21 @@ a:hover {
   display: flex;
   align-items: center;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joseph\/Development\/penny4nasa\/content\/themes\/penny4nasa\/styles\/molecules\/_site-header\.scss}line{font-family:\0000327}}
-.site-header .site-navigation .menu-site-menu-container {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joseph\/Development\/penny4nasa\/content\/themes\/penny4nasa\/styles\/molecules\/_site-header\.scss}line{font-family:\0000330}}
+.site-navigation .menu-site-menu-container {
   width: 100%;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joseph\/Development\/penny4nasa\/content\/themes\/penny4nasa\/styles\/molecules\/_site-header\.scss}line{font-family:\0000330}}
-.site-header .site-navigation .nav-menu {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joseph\/Development\/penny4nasa\/content\/themes\/penny4nasa\/styles\/molecules\/_site-header\.scss}line{font-family:\0000333}}
+.site-navigation .nav-menu {
   display: flex;
   flex-direction: row;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joseph\/Development\/penny4nasa\/content\/themes\/penny4nasa\/styles\/molecules\/_site-header\.scss}line{font-family:\0000334}}
-.site-header .site-navigation .nav-menu .menu-item {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joseph\/Development\/penny4nasa\/content\/themes\/penny4nasa\/styles\/molecules\/_site-header\.scss}line{font-family:\0000337}}
+.site-navigation .nav-menu .menu-item {
   width: 20%;
   text-align: center;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joseph\/Development\/penny4nasa\/content\/themes\/penny4nasa\/styles\/molecules\/_site-header\.scss}line{font-family:\0000338}}
-.site-header .site-navigation .nav-menu .menu-item:last-child {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joseph\/Development\/penny4nasa\/content\/themes\/penny4nasa\/styles\/molecules\/_site-header\.scss}line{font-family:\0000341}}
+.site-navigation .nav-menu .menu-item:last-child {
   color: #ff595e;
 }

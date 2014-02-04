@@ -1,0 +1,28 @@
+$site-footer-height: 0 !default;
+
+html, body {
+	height: 100%;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+}
+
+%sticky-wrapper {
+	width: 100%;
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+	margin: 0 0 ($site-footer-height * -1) 0;
+}
+
+%sticky-footer-wrapper {
+	width: 100%;
+	height: $site-footer-height;
+}
+
+%sticky-content-wrapper {
+	width: 100%;
+	padding: 0 0 $site-footer-height 0;
+}

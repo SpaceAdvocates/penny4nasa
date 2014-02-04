@@ -1,3 +1,10 @@
 body {
+	@extend %sticky-wrapper;
 	font-size: $base-font-size;
+	background: $dark-blue;
+	@include background(linear-gradient(top, $dark-blue, $black));
+}
+
+.site-content {
+	@extend %sticky-content-wrapper;
 }
