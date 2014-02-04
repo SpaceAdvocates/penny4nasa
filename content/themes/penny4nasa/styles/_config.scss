@@ -1,13 +1,16 @@
 /////// Config defaults for site colors ///////
 // -----------------------------------------------------------------------------
-$black: #000000;
-$white: #ffffff;
+$black: #111111;
+$white: #eeeeee;
 
 $off-white: #efefef;
 
 $light-grey: rgb(247, 247, 247);
 $grey: rgb(206, 207, 206);
 $dark-grey: rgb(75, 82, 84);
+
+$red: #ff595e;
+$blue: #1e94de;
 
 $facebook-color: #3b5998;
 $twitter-color: #00acee;
@@ -43,6 +46,7 @@ $small-font-size: 12px;
 $base-line-height: 1;
 
 $default-font-family: Helvetica, Arial, sans-serif;
+$header-font-family: "PT Sans", Helvetica, Arial, sans-serif;
 
 /////// Path configuration ///////
 // -----------------------------------------------------------------------------
@@ -58,10 +62,10 @@ $fa-font-path: $bower-components-path + "/font-awesome/fonts";
 /////// Susy configuration ///////
 // -----------------------------------------------------------------------------
 $total-columns: 12;						// a 12-column grid
-$column-width: 5em;						// each column is 5em wide
-$gutter-width: 1em;						// 1em gutters between columns
+$column-width: 5rem;						// each column is 5em wide
+$gutter-width: 1rem;						// 1em gutters between columns
 $grid-padding: $gutter-width;	// grid-padding equal to gutters
-$container-style: fluid;
+$container-style: magic;
 
 /////// UI @media breakpoint defaults ///////
 // -----------------------------------------------------------------------------
@@ -81,6 +85,8 @@ $portrait: "only screen and (orientation: portrait)";
 
 /////// Animation configuration ///////
 // -----------------------------------------------------------------------------
+$base-transition-duration: 0.1s;
+$default-transition-easing: linear;
 
 /////// Misc configuration ///////
 // -----------------------------------------------------------------------------

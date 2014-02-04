@@ -1,0 +1,44 @@
+.site-header {
+	font-family: $header-font-family;
+	// font-weight: bold;
+	color: $white;
+	background-color: $black;
+
+	a {
+		@extend %clean-link;
+	}
+	.container {
+		@include container;
+		padding-top: $grid-padding / 2;
+		padding-bottom: $grid-padding / 2;
+		display: flex;
+		flex-direction: row;
+	}
+	.site-title {
+		@include span-columns(5);
+		display: flex;
+	}
+	.site-navigation {
+		@include span-columns(7);
+		@include omega;
+		display: flex;
+		align-items: center;
+
+		.menu-site-menu-container{
+			width: 100%;
+		}
+		.nav-menu {
+			display: flex;
+			flex-direction: row;
+
+			.menu-item {
+				width: 20%;
+				text-align: center;
+
+				&:last-child {
+					color: $red;
+				}
+			}
+		}
+	}
+}

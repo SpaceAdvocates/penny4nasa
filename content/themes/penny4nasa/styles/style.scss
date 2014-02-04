@@ -7,13 +7,13 @@
 
 // CSS Normalize
 // ------------------------------------------------------------------------------
-@import "CSS:../bower_components/normalize-css/normalize";
+// @import "CSS:../bower_components/normalize-css/normalize";
 
 // Compass Libraries
 // ------------------------------------------------------------------------------
-// @import "compass/css3";
-// @import "compass/reset";
-// @import "susy";
+@import "compass/css3";
+@import "compass/reset";
+@import "susy";
 
 // Vendor Libraries
 // ------------------------------------------------------------------------------
@@ -35,15 +35,15 @@
 
 //// Quarks
 // These are basic HTML element styles
-// @import "quarks/**/*";
+@import "quarks/**/*";
 
 //// Atoms
 // Combinations of quarks, small regions of a view
-// @import "atoms/*";
+@import "atoms/**/*";
 
 //// Molecules
 // Combinations of quarks and atoms, medium to large regions of a view
-// @import "molecules/**/*";
+@import "molecules/**/*";
 
 //// Templates
 // Page specific styling

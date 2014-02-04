@@ -1,0 +1,23 @@
+$header-p4n-logo-size: 2em;
+
+.site-title {
+	font-size: 2em;
+	color: $blue;
+
+	.p4n-logo {
+		width: $header-p4n-logo-size;
+		height: $header-p4n-logo-size;
+		float: left;
+	}
+	.title {
+		font-size: 1.5em;
+		float: left;
+		line-height: 1;
+		padding: $grid-padding / 2;
+		text-transform: uppercase;
+
+		span {
+			color: $red;
+		}
+	}
+}

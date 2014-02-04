@@ -1,0 +1,28 @@
+%clean-link {
+	color: inherit;
+	text-decoration: none;
+
+	&:hover {
+		color: $red;
+		text-decoration: none;
+	}
+}
+
+%header-link {
+	@extend %clean-link;
+}
+
+a {
+	color: $red;
+	cursor: pointer;
+	@include transition(color $base-transition-duration $default-transition-easing);
+
+	@each $header in (h1 h2 h3 h4 h5 h6) {
+		#{$header} & {
+			@extend %header-link;
+		}
+	}
+	&:hover {
+		text-decoration: underline;
+	}
+}
