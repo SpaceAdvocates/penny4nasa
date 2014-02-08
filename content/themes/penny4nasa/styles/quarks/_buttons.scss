@@ -1,7 +1,7 @@
 %button {
 	@include clean-link(inherit);
 	display: block;
-	padding: $grid-padding;
+	padding: 1em;
 	@include transition(background-color $base-transition-duration $default-transition-easing);
 	border-radius: $default-border-radius;
 }

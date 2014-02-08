@@ -1,11 +1,19 @@
+// Variables
 $social-links: facebook, twitter, google-plus, youtube;
 $social-link-columns: floor($total-columns / length($social-links));
-$social-link-size: 2em;
+$social-link-size: 0.5em;
 
+// Helpers
+%social-link {
+	font-size: 1em + $social-link-size;
+	padding: 1em - $social-link-size;
+	display: inline-block;
+}
+
+// Styles
 .social-links {
 	@extend %clean-list;
 	@extend %horizontal-list;
-	clear: both;
 	text-align: center;
 }
 
@@ -15,8 +23,8 @@ $social-link-size: 2em;
 
 	&.facebook {
 		i {
+			@extend %social-link;
 			@include button($facebook-color);
-			display: inline-block;
 
 			&:before {
 				content: $fa-var-facebook;
@@ -25,8 +33,8 @@ $social-link-size: 2em;
 	}
 	&.twitter {
 		i {
+			@extend %social-link;
 			@include button($twitter-color);
-			display: inline-block;
 
 			&:before {
 				content: $fa-var-twitter;
@@ -35,8 +43,8 @@ $social-link-size: 2em;
 	}
 	&.google-plus {
 		i {
+			@extend %social-link;
 			@include button($google-plus-color);
-			display: inline-block;
 
 			&:before {
 				content: $fa-var-google-plus;
@@ -45,8 +53,8 @@ $social-link-size: 2em;
 	}
 	&.youtube {
 		i {
+			@extend %social-link;
 			@include button($youtube-color);
-			display: inline-block;
 
 			&:before {
 				content: $fa-var-youtube;
@@ -58,12 +66,12 @@ $social-link-size: 2em;
 	}
 	i {
 		@extend .fa;
-		font-size: $social-link-size;
+		@include box-sizing(content-box);
 
 		&:before {
+			// font-size: $social-link-size;
 			display: block;
 			width: 1em;
-			height: 1em;
 		}
 	}
 }

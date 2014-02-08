@@ -1,5 +1,4 @@
 $social-links: facebook, twitter, google-plus, youtube;
-$social-links-columns: 8;
 
 .hero-cta {
 	margin-bottom: $gutter-width * 4;
@@ -14,8 +13,8 @@ $social-links-columns: 8;
 		color: $white;
 	}
 	.social-links {
-		@include span-columns($social-links-columns);
-		@include isolate((($total-columns - $social-links-columns) / 2) + 1);
+		@include span-columns(5);
+		@include pre(1);
 	}
 }
 
@@ -27,12 +26,12 @@ $social-links-columns: 8;
 
 .hero-cta--subheader {
 	line-height: 1.2;
-	margin-bottom: $gutter-width;
+	margin-bottom: $gutter-width * 2;
 }
 
 .hero-cta--link {
 	@include span-columns(4);
-	@include isolate(5);
+	@include pre(1);
 	@extend %red-button;
 	margin-bottom: $gutter-width * 2;
 }
