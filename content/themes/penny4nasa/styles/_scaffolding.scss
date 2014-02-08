@@ -4,15 +4,16 @@
 
 body {
 	font-size: $base-font-size;
+	font-family: $default-font-family;
 	background: $dark-blue;
-	@include background(image-url("#{$theme-images-directory}/stars.svg"), linear-gradient(top, $dark-blue, $black));
+	color: $secondary-text-color;
 }
 
 .wrapper {
 	@extend %sticky-wrapper;
+	@include background(image-url("#{$theme-images-directory}/stars.svg"), linear-gradient(top, $dark-blue, $black));
 }
 
 .container {
 	@include container;
-	padding-top: $gutter-width;
 }

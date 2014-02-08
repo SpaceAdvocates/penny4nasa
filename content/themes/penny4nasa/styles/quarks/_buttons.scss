@@ -1,0 +1,22 @@
+%button {
+	@include clean-link(inherit);
+	display: block;
+	padding: $grid-padding;
+	@include transition(background-color $base-transition-duration $default-transition-easing);
+	border-radius: $default-border-radius;
+}
+
+@mixin button ($background-color, $color: $secondary-text-color) {
+	@extend %button;
+	background-color: rgba($background-color, 0.8);
+	color: $color;
+
+	&:hover {
+		background-color: $background-color;
+		color: $color;
+	}
+}
+
+%red-button {
+	@include button($red);
+}

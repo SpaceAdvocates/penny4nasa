@@ -1,15 +1,5 @@
-%clean-link {
-	color: inherit;
-	text-decoration: none;
-
-	&:hover {
-		color: $red;
-		text-decoration: none;
-	}
-}
-
 %header-link {
-	@extend %clean-link;
+	@include clean-link;
 }
 
 a {

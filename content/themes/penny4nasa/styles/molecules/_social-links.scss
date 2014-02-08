@@ -1,0 +1,69 @@
+$social-links: facebook, twitter, google-plus, youtube;
+$social-link-columns: floor($total-columns / length($social-links));
+$social-link-size: 2em;
+
+.social-links {
+	@extend %clean-list;
+	@extend %horizontal-list;
+	clear: both;
+	text-align: center;
+}
+
+.social-link {
+	@include span-columns($social-link-columns);
+	@include nth-omega(length($social-links));
+
+	&.facebook {
+		i {
+			@include button($facebook-color);
+			display: inline-block;
+
+			&:before {
+				content: $fa-var-facebook;
+			}
+		}
+	}
+	&.twitter {
+		i {
+			@include button($twitter-color);
+			display: inline-block;
+
+			&:before {
+				content: $fa-var-twitter;
+			}
+		}
+	}
+	&.google-plus {
+		i {
+			@include button($google-plus-color);
+			display: inline-block;
+
+			&:before {
+				content: $fa-var-google-plus;
+			}
+		}
+	}
+	&.youtube {
+		i {
+			@include button($youtube-color);
+			display: inline-block;
+
+			&:before {
+				content: $fa-var-youtube;
+			}
+		}
+	}
+	a {
+		text-decoration: none;
+	}
+	i {
+		@extend .fa;
+		font-size: $social-link-size;
+
+		&:before {
+			display: block;
+			width: 1em;
+			height: 1em;
+		}
+	}
+}

@@ -1,0 +1,11 @@
+%clean-list {
+	list-style-type: none;
+}
+
+%horizontal-list {
+	overflow: hidden;
+
+	li {
+		float: left;
+	}
+}

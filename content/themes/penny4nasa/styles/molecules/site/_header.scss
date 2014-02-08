@@ -3,9 +3,10 @@
 	color: $white;
 	background-color: $black;
 	text-transform: uppercase;
+	margin-bottom: $gutter-width;
 
 	a {
-		@extend %clean-link;
+		@include clean-link;
 	}
 	.container {
 		@include container;

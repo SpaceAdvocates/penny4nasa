@@ -1,0 +1,9 @@
+@mixin clean-link ($color: $red) {
+	color: inherit;
+	text-decoration: none;
+
+	&:hover {
+		color: $color;
+		text-decoration: none;
+	}
+}
