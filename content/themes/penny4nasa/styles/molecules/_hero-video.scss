@@ -1,0 +1,14 @@
+$hero-video-width: 70%;
+
+.hero-video {
+	position: relative;
+	width: $hero-video-width;
+	margin: 0 auto;
+	background-color: $black;
+
+	&:before {
+		content: "";
+		display: block;
+		padding-top: $hero-video-aspect-ratio;
+	}
+}

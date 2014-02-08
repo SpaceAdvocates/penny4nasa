@@ -38,6 +38,7 @@ $default-border-radius: 3px;
 
 /////// Page dimension configuration ///////
 // -----------------------------------------------------------------------------
+$site-footer-height: 0rem;
 
 /////// Typography configuration ///////
 // -----------------------------------------------------------------------------
@@ -83,6 +84,15 @@ $portrait: "only screen and (orientation: portrait)";
 
 /////// Site Icons and Images ///////
 // -----------------------------------------------------------------------------
+$theme-images-directory: "/content/themes/penny4nasa/images";
+
+$aspect-radio-1-1: 100%;
+$aspect-radio-2-1: 50%;
+$aspect-radio-1-2: 200%;
+$aspect-radio-4-3: 75%;
+$aspect-radio-16-9: 56.25%;
+
+$hero-video-aspect-ratio: $aspect-radio-16-9;
 
 /////// Animation configuration ///////
 // -----------------------------------------------------------------------------

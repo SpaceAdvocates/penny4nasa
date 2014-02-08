@@ -1,4 +1,5 @@
-		</main> <!-- #main -->
+			</main> <!-- .main -->
+		</div> <!-- .wrapper -->
 
 		<footer class="site-footer" role="contentinfo">
 			<?php get_sidebar( 'footer' ); ?>
