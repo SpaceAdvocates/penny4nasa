@@ -1,3 +1,41 @@
+$footer-link-count: 7;
+
 .site-footer {
 	@extend %sticky-footer;
+	font-size: 0.8em;
+	line-height: $grid-padding;
+	color: $dark-text-color;
+	background-color: $black;
+	padding-top: $grid-padding;
+	padding-bottom: $grid-padding;
+	text-align: center;
+
+	a {
+		@include clean-link;
+	}
+	.container {
+		@include container;
+	}
+	.footer-links {
+		@extend %horizontal-list;
+		@include center-columns(6);
+		margin-bottom: $grid-padding / 2;
+
+		.footer-link {
+			// @include isolate-grid(floor($total-columns / $footer-link-count));
+			width: 100% / $footer-link-count;
+		}
+	}
+	.copyright {
+		font-size: 0.9em;
+		clear: both;
+	}
+	.p4n-logo {
+		display: block;
+		height: 1rem;
+
+		* {
+			fill: $dark-text-color;
+		}
+	}
 }

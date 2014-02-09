@@ -1,0 +1,21 @@
+.post {
+	height: 14em;
+
+	.entry-summary {
+		display: none;
+	}
+	.entry-meta {
+		display: none;
+	}
+	.post-thumbnail {
+		display: block;
+
+		img {
+			display: block;
+		}
+	}
+	img {
+		width: 100%;
+		height: auto;
+	}
+}

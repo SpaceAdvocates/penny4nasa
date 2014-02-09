@@ -1,6 +1,5 @@
 // Variables
-$social-links: facebook, twitter, google-plus, youtube;
-$social-link-columns: floor($total-columns / length($social-links));
+$social-link-columns: floor($total-columns / length($social-media-list));
 $social-link-size: 0.5em;
 
 // Helpers
@@ -19,49 +18,29 @@ $social-link-size: 0.5em;
 
 .social-link {
 	@include span-columns($social-link-columns);
-	@include nth-omega(length($social-links));
+	@include nth-omega(length($social-media-list));
 
-	&.facebook {
-		i {
-			@extend %social-link;
-			@include button($facebook-color);
+	@each $media in $social-media-list {
+		$service: getObjectKey($media);
+		$service-properties: getObjectValue($media);
+		$service-color: getObjectValue($service-properties);
 
-			&:before {
-				content: $fa-var-facebook;
+		&.#{$service} {
+			a {
+				@include button($service-color);
+
+				&:hover {
+					background-color: $service-color;
+				}
 			}
-		}
-	}
-	&.twitter {
-		i {
-			@extend %social-link;
-			@include button($twitter-color);
-
-			&:before {
-				content: $fa-var-twitter;
-			}
-		}
-	}
-	&.google-plus {
-		i {
-			@extend %social-link;
-			@include button($google-plus-color);
-
-			&:before {
-				content: $fa-var-google-plus;
-			}
-		}
-	}
-	&.youtube {
-		i {
-			@extend %social-link;
-			@include button($youtube-color);
-
-			&:before {
-				content: $fa-var-youtube;
+			i {
+				@extend %fa-#{$service};
+				@extend %social-link;
 			}
 		}
 	}
 	a {
+		display: inline-block;
 		text-decoration: none;
 	}
 	i {

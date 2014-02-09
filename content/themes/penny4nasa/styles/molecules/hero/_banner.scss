@@ -8,6 +8,8 @@
 }
 
 .hero-banner {
+	margin-bottom: $gutter-width * 3;
+
 	&:before {
 		@extend %moon-image;
 	}
@@ -19,7 +21,9 @@
 		background-color: $moon-grey;
 
 		.container {
-
+			@include container;
+			padding-top: 4em;
+			padding-bottom: 4em;
 		}
 	}
 }

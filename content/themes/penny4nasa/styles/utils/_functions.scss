@@ -1,0 +1,17 @@
+// @return object key
+@function getObjectKey($obj) {
+	@return nth($obj, 1);
+}
+
+// @return object value for key
+@function getObjectValue($obj, $key: null) {
+	@if $key == null {
+		@return nth($obj, 2);
+	} @else {
+		@each $pair in $obj {
+			@if getObjectKey($pair) == $key {
+				@return nth($pair, 2);
+			}
+		}
+	}
+}

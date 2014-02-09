@@ -1,9 +1,11 @@
 .hero-video {
 	margin-bottom: $gutter-width * 2;
 
+	.container {
+		@include container;
+	}
 	.video {
-		@include span-columns(8);
-		@include isolate(3);
+		@include center-columns(10);
 		position: relative;
 		background-color: $black;
 

@@ -1,15 +1,15 @@
 %button {
 	@include clean-link(inherit);
 	display: block;
+	font-family: $button-font-family;
 	padding: 1em;
-	@include transition(background-color $base-transition-duration $default-transition-easing);
 	border-radius: $default-border-radius;
 }
 
-@mixin button ($background-color, $color: $secondary-text-color) {
-	@extend %button;
+@mixin button ($background-color, $color: $light-text-color) {
 	background-color: rgba($background-color, 0.8);
 	color: $color;
+	@include transition(background-color $base-transition-duration $default-transition-easing);
 
 	&:hover {
 		background-color: $background-color;
@@ -18,5 +18,6 @@
 }
 
 %red-button {
+	@extend %button;
 	@include button($red);
 }

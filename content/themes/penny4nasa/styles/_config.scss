@@ -24,8 +24,8 @@ $primary-color: $dark-grey;
 $secondary-color: $grey;
 $tertiary-color: $light-grey;
 
-$primary-text-color: $primary-color;
-$secondary-text-color: $tertiary-color;
+$dark-text-color: $primary-color;
+$light-text-color: $tertiary-color;
 
 $default-background-color: $light-grey;
 
@@ -40,17 +40,20 @@ $default-border-radius: 1px;
 
 /////// Page dimension configuration ///////
 // -----------------------------------------------------------------------------
-$site-footer-height: 0rem;
+$site-footer-height: 4.5rem;
 
 /////// Typography configuration ///////
 // -----------------------------------------------------------------------------
 $base-font-size: 16px;
-$small-font-size: 12px;
+$small-font-size: $base-font-size * 0.75;
 
 $base-line-height: 1;
 
 $default-font-family: Helvetica, Arial, sans-serif;
-$header-font-family: "PT Sans", Helvetica, Arial, sans-serif;
+$special-font-family: "PT Sans", Helvetica, Arial, sans-serif;
+
+$header-font-family: $special-font-family;
+$button-font-family: $special-font-family;
 
 /////// Path configuration ///////
 // -----------------------------------------------------------------------------
@@ -105,3 +108,16 @@ $default-transition-easing: linear;
 
 /////// Misc configuration ///////
 // -----------------------------------------------------------------------------
+$social-media-list:
+	facebook (
+		(color $facebook-color)
+	),
+	twitter (
+		(color $twitter-color)
+	),
+	google-plus (
+		(color $google-plus-color)
+	),
+	youtube (
+		(color $youtube-color)
+	);

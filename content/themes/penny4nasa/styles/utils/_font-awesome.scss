@@ -1,0 +1,21 @@
+@mixin fa-icon ($icon) {
+	&:before {
+		content: $icon;
+	}
+}
+
+%fa-youtube {
+	@include fa-icon($fa-var-youtube);
+}
+
+%fa-facebook {
+	@include fa-icon($fa-var-facebook);
+}
+
+%fa-twitter {
+	@include fa-icon($fa-var-twitter);
+}
+
+%fa-google-plus {
+	@include fa-icon($fa-var-google-plus);
+}

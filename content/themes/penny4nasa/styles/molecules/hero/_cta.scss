@@ -3,6 +3,9 @@ $social-links: facebook, twitter, google-plus, youtube;
 .hero-cta {
 	margin-bottom: $gutter-width * 4;
 
+	.container {
+		@include container;
+	}
 	.content {
 		@include span-columns(8);
 		@include isolate(3);
