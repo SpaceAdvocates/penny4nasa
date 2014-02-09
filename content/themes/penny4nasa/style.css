@@ -160,13 +160,13 @@ html, body {
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joseph\/Development\/penny4nasa\/content\/themes\/penny4nasa\/styles\/utils\/_sticky-footer\.scss}line{font-family:\000037}}
 .wrapper {
   min-height: 100%;
-  padding-bottom: 4.5rem;
+  padding-bottom: 10.5rem;
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joseph\/Development\/penny4nasa\/content\/themes\/penny4nasa\/styles\/utils\/_sticky-footer\.scss}line{font-family:\0000312}}
 .site-footer {
-  height: 4.5rem;
-  margin-top: -4.5rem;
+  height: 10.5rem;
+  margin-top: -10.5rem;
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joseph\/Development\/penny4nasa\/content\/themes\/penny4nasa\/styles\/quarks\/_buttons\.scss}line{font-family:\000031}}
@@ -177,6 +177,7 @@ html, body {
   font-family: "PT Sans", Helvetica, Arial, sans-serif;
   padding: 1em;
   border-radius: 1px;
+  text-shadow: 0 -1px 0 rgba(17, 17, 17, 0.25);
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joseph\/Development\/penny4nasa\/content\/themes\/penny4nasa\/styles\/utils\/_links\.scss}line{font-family:\000035}}
 .hero-cta--link:hover {
@@ -184,7 +185,7 @@ html, body {
   text-decoration: none;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joseph\/Development\/penny4nasa\/content\/themes\/penny4nasa\/styles\/quarks\/_buttons\.scss}line{font-family:\0000320}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joseph\/Development\/penny4nasa\/content\/themes\/penny4nasa\/styles\/quarks\/_buttons\.scss}line{font-family:\0000322}}
 .hero-cta--link {
   background-color: rgba(255, 89, 94, 0.8);
   color: #f7f7f7;
@@ -193,7 +194,7 @@ html, body {
   -o-transition: background-color 0.1s linear;
   transition: background-color 0.1s linear;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joseph\/Development\/penny4nasa\/content\/themes\/penny4nasa\/styles\/quarks\/_buttons\.scss}line{font-family:\0000314}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joseph\/Development\/penny4nasa\/content\/themes\/penny4nasa\/styles\/quarks\/_buttons\.scss}line{font-family:\0000316}}
 .hero-cta--link:hover {
   background-color: #ff595e;
   color: #f7f7f7;
@@ -398,6 +399,10 @@ a:hover {
   display: block;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joseph\/Development\/penny4nasa\/content\/themes\/penny4nasa\/styles\/molecules\/_post\.scss}line{font-family:\0000335}}
+.post .post--cover-image {
+  margin-bottom: -40%;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joseph\/Development\/penny4nasa\/content\/themes\/penny4nasa\/styles\/molecules\/_post\.scss}line{font-family:\0000338}}
 .post img {
   width: 100%;
   height: auto;
@@ -436,7 +441,7 @@ a:hover {
   -o-transition: background-color 0.1s linear;
   transition: background-color 0.1s linear;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joseph\/Development\/penny4nasa\/content\/themes\/penny4nasa\/styles\/quarks\/_buttons\.scss}line{font-family:\0000314}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joseph\/Development\/penny4nasa\/content\/themes\/penny4nasa\/styles\/quarks\/_buttons\.scss}line{font-family:\0000316}}
 .social-link.facebook a:hover {
   background-color: #3b5998;
   color: #f7f7f7;
@@ -454,7 +459,7 @@ a:hover {
   -o-transition: background-color 0.1s linear;
   transition: background-color 0.1s linear;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joseph\/Development\/penny4nasa\/content\/themes\/penny4nasa\/styles\/quarks\/_buttons\.scss}line{font-family:\0000314}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joseph\/Development\/penny4nasa\/content\/themes\/penny4nasa\/styles\/quarks\/_buttons\.scss}line{font-family:\0000316}}
 .social-link.twitter a:hover {
   background-color: #00acee;
   color: #f7f7f7;
@@ -472,7 +477,7 @@ a:hover {
   -o-transition: background-color 0.1s linear;
   transition: background-color 0.1s linear;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joseph\/Development\/penny4nasa\/content\/themes\/penny4nasa\/styles\/quarks\/_buttons\.scss}line{font-family:\0000314}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joseph\/Development\/penny4nasa\/content\/themes\/penny4nasa\/styles\/quarks\/_buttons\.scss}line{font-family:\0000316}}
 .social-link.google-plus a:hover {
   background-color: #dd4b39;
   color: #f7f7f7;
@@ -490,7 +495,7 @@ a:hover {
   -o-transition: background-color 0.1s linear;
   transition: background-color 0.1s linear;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joseph\/Development\/penny4nasa\/content\/themes\/penny4nasa\/styles\/quarks\/_buttons\.scss}line{font-family:\0000314}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joseph\/Development\/penny4nasa\/content\/themes\/penny4nasa\/styles\/quarks\/_buttons\.scss}line{font-family:\0000316}}
 .social-link.youtube a:hover {
   background-color: #bb0000;
   color: #f7f7f7;
@@ -517,7 +522,7 @@ a:hover {
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joseph\/Development\/penny4nasa\/content\/themes\/penny4nasa\/styles\/molecules\/hero\/_banner\.scss}line{font-family:\000031}}
-.hero-banner:before, .hero-banner:after {
+.hero-banner:before, .hero-banner:after, .site-footer:before {
   display: block;
   content: "";
   width: 100%;
@@ -630,7 +635,6 @@ a:hover {
   margin-right: 1.40845%;
   display: inline;
   margin-left: 8.4507%;
-  margin-bottom: 2rem;
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joseph\/Development\/penny4nasa\/content\/themes\/penny4nasa\/styles\/molecules\/hero\/_video\.scss}line{font-family:\000031}}
@@ -675,16 +679,29 @@ a:hover {
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joseph\/Development\/penny4nasa\/content\/themes\/penny4nasa\/styles\/molecules\/site\/_footer\.scss}line{font-family:\000033}}
+.hero-banner:before, .hero-banner:after, .site-footer:before {
+  display: block;
+  content: "";
+  width: 100%;
+  height: 5.5rem;
+  background: url("/content/themes/penny4nasa/images/moon-top.png") no-repeat;
+  background-size: cover;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joseph\/Development\/penny4nasa\/content\/themes\/penny4nasa\/styles\/molecules\/site\/_footer\.scss}line{font-family:\0000312}}
 .site-footer {
   font-size: 0.8em;
   line-height: 1rem;
   color: #4b5254;
-  background-color: #111111;
   padding-top: 1rem;
-  padding-bottom: 1rem;
   text-align: center;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joseph\/Development\/penny4nasa\/content\/themes\/penny4nasa\/styles\/molecules\/site\/_footer\.scss}line{font-family:\0000313}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joseph\/Development\/penny4nasa\/content\/themes\/penny4nasa\/styles\/molecules\/site\/_footer\.scss}line{font-family:\0000323}}
+.site-footer .content {
+  background-color: #b9cdd3;
+  padding: 1rem 0 0.5rem;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joseph\/Development\/penny4nasa\/content\/themes\/penny4nasa\/styles\/molecules\/site\/_footer\.scss}line{font-family:\0000327}}
 .site-footer a {
   color: inherit;
   text-decoration: none;
@@ -694,7 +711,7 @@ a:hover {
   color: #ff595e;
   text-decoration: none;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joseph\/Development\/penny4nasa\/content\/themes\/penny4nasa\/styles\/molecules\/site\/_footer\.scss}line{font-family:\0000316}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joseph\/Development\/penny4nasa\/content\/themes\/penny4nasa\/styles\/molecules\/site\/_footer\.scss}line{font-family:\0000330}}
 .site-footer .container {
   *zoom: 1;
   max-width: 1168px;
@@ -713,7 +730,7 @@ a:hover {
   display: table;
   clear: both;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joseph\/Development\/penny4nasa\/content\/themes\/penny4nasa\/styles\/molecules\/site\/_footer\.scss}line{font-family:\0000319}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joseph\/Development\/penny4nasa\/content\/themes\/penny4nasa\/styles\/molecules\/site\/_footer\.scss}line{font-family:\0000333}}
 .site-footer .footer-links {
   width: 49.29577%;
   float: left;
@@ -723,21 +740,22 @@ a:hover {
   margin-left: 25.35211%;
   margin-bottom: 0.5rem;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joseph\/Development\/penny4nasa\/content\/themes\/penny4nasa\/styles\/molecules\/site\/_footer\.scss}line{font-family:\0000324}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joseph\/Development\/penny4nasa\/content\/themes\/penny4nasa\/styles\/molecules\/site\/_footer\.scss}line{font-family:\0000338}}
 .site-footer .footer-links .footer-link {
-  width: 14.28571%;
+  padding: 0 1.4em;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joseph\/Development\/penny4nasa\/content\/themes\/penny4nasa\/styles\/molecules\/site\/_footer\.scss}line{font-family:\0000329}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joseph\/Development\/penny4nasa\/content\/themes\/penny4nasa\/styles\/molecules\/site\/_footer\.scss}line{font-family:\0000342}}
 .site-footer .copyright {
   font-size: 0.9em;
   clear: both;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joseph\/Development\/penny4nasa\/content\/themes\/penny4nasa\/styles\/molecules\/site\/_footer\.scss}line{font-family:\0000333}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joseph\/Development\/penny4nasa\/content\/themes\/penny4nasa\/styles\/molecules\/site\/_footer\.scss}line{font-family:\0000346}}
 .site-footer .p4n-logo {
   display: block;
   height: 1rem;
+  width: 1rem;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joseph\/Development\/penny4nasa\/content\/themes\/penny4nasa\/styles\/molecules\/site\/_footer\.scss}line{font-family:\0000337}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joseph\/Development\/penny4nasa\/content\/themes\/penny4nasa\/styles\/molecules\/site\/_footer\.scss}line{font-family:\0000351}}
 .site-footer .p4n-logo * {
   fill: #4b5254;
 }

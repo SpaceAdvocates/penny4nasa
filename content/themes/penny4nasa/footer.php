@@ -2,31 +2,33 @@
 		</div> <!-- .wrapper -->
 
 		<footer class="site-footer" role="contentinfo">
-			<div class="container">
-				<ul class="footer-links">
-					<li class="footer-link">
-						<a href="javascript:void(0);">The Mission</a>
-					</li>
-					<li class="footer-link">
-						<a href="javascript:void(0);">About</a>
-					</li>
-					<li class="footer-link">
-						<a href="javascript:void(0);">Contact</a>
-					</li>
-					<li class="footer-link">
-						<?php get_template_part( 'content', 'logo' ); ?>
-					</li>
-					<li class="footer-link">
-						<a href="javascript:void(0);">Blog</a>
-					</li>
-					<li class="footer-link">
-						<a href="javascript:void(0);">Videos</a>
-					</li>
-					<li class="footer-link">
-						<a href="javascript:void(0);">Press Room</a>
-					</li>
-				</ul>
-				<p class="copyright">&copy; 2014 Space Advocates. All rights reserved.</p>
+			<div class="content">
+				<div class="container">
+					<ul class="footer-links">
+						<li class="footer-link">
+							<a href="javascript:void(0);">The Mission</a>
+						</li>
+						<li class="footer-link">
+							<a href="javascript:void(0);">About</a>
+						</li>
+						<li class="footer-link">
+							<a href="javascript:void(0);">Contact</a>
+						</li>
+						<li class="footer-link">
+							<?php get_template_part( 'content', 'logo' ); ?>
+						</li>
+						<li class="footer-link">
+							<a href="javascript:void(0);">Blog</a>
+						</li>
+						<li class="footer-link">
+							<a href="javascript:void(0);">Videos</a>
+						</li>
+						<li class="footer-link">
+							<a href="javascript:void(0);">Press Room</a>
+						</li>
+					</ul>
+					<p class="copyright">&copy; 2014 Space Advocates. All rights reserved.</p>
+				</div>
 			</div>
 		</footer>
 

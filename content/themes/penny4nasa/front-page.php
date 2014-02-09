@@ -38,11 +38,12 @@
 	</div>
 </div>
 
-<div class="hero-banner">
+<!-- <div class="hero-banner">
 	<div class="content">
 		<div class="container">
 
 		</div>
 	</div>
+</div> -->
 
 <?php get_footer(); ?>
