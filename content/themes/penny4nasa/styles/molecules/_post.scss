@@ -1,6 +1,19 @@
-.post {
-	height: 14em;
+$post-header-width: 75%;
 
+.post {
+	position: relative;
+	margin-bottom: $grid-padding * 4;
+
+	.entry-header {
+		font-size: 0.6em;
+		width: $post-header-width;
+		padding: 1.5em;
+		text-align: center;
+		background-color: rgba($black, 0.9);
+	}
+	.entry-title {
+		margin: 0;
+	}
 	.entry-summary {
 		display: none;
 	}
@@ -10,6 +23,11 @@
 	.post-thumbnail {
 		display: block;
 
+		& + .entry-header {
+			position: absolute;
+			bottom: -15%;
+			left: (100% - $post-header-width) / 2;
+		}
 		img {
 			display: block;
 		}
