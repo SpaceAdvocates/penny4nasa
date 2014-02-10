@@ -1,0 +1,43 @@
+$graph-budget-height: 31.25em;
+$graph-budget-margin-left: 3.125em;
+$graph-budget-margin-top: 1.25em;
+
+.graph-budget {
+	font-size: 1em;
+	height: $graph-budget-height;
+	fill: $white;
+
+	.graph {
+		@include transform(translate($graph-budget-margin-left, $graph-budget-margin-top));
+	}
+	.axis {
+		&.x {
+			@include transform(translate(0, $graph-budget-height - 3));
+
+			path {
+				display: none;
+			}
+		}
+		path, line {
+			fill: none;
+			stroke: $white;
+			shape-rendering: crispEdges;
+		}
+	}
+	.label {
+		&.y {
+			@include transform(rotate(-90deg));
+			text-anchor: end;
+		}
+	}
+	.line {
+	  fill: none;
+	  stroke: $blue;
+	  stroke-width: 1.5px;
+	}
+	.goal {
+		fill: none;
+		stroke: $red;
+		stroke-width: 1.5px;
+	}
+}

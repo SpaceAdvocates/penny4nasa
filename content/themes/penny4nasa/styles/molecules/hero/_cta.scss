@@ -1,7 +1,9 @@
 $social-links: facebook, twitter, google-plus, youtube;
 
 .hero-cta {
-	margin-bottom: $gutter-width * 4;
+	@extend %hero;
+	background-color: rgba($black, 0.7);
+	padding: $grid-padding * 3;
 
 	.container {
 		@include container;

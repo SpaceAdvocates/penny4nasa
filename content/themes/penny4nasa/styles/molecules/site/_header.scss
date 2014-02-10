@@ -3,7 +3,7 @@
 	color: $white;
 	background-color: $black;
 	text-transform: uppercase;
-	margin-bottom: $gutter-width;
+	margin-bottom: $gutter-width * 2;
 
 	a {
 		@include clean-link;

@@ -1,5 +1,5 @@
 .hero-video {
-	margin-bottom: $gutter-width * 2;
+	@extend %hero;
 
 	.container {
 		@include container;
@@ -7,7 +7,8 @@
 	.video {
 		@include center-columns(10);
 		position: relative;
-		background-color: $black;
+		background: $black url(http://b.vimeocdn.com/ts/457/179/457179811_1280.jpg) no-repeat center;
+		background-size: 100%;
 
 		&:before {
 			content: "";
