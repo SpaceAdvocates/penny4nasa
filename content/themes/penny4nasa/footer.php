@@ -69,7 +69,6 @@
 				.y(function(d) { return y('1'); });
 
 			d3.tsv('content/themes/penny4nasa/inc/budget-data.tsv', function (error, data) {
-				console.log(data);
 				data.forEach(function (d) {
 					d.date = parseDate(d.date);
 					d.amount = parseFloat(d.amount);
