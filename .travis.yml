@@ -7,6 +7,8 @@ before_script:
  # install dependencies
  - gem update --system
  - gem install compass
+ - gem install susy
+ - gem install sass-globbing
  - npm install -g grunt-cli bower
 script:
  # We want to gate on passing tests and a successful build
