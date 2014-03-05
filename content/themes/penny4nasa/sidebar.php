@@ -8,9 +8,20 @@
  */
 ?>
 <aside class="sidebar">
-	<?php if ( is_active_sidebar( 'sidebar-1' ) ) : ?>
-	<div id="primary-sidebar" class="primary-sidebar widget-area" role="complementary">
-		<?php dynamic_sidebar( 'sidebar-1' ); ?>
-	</div><!-- #primary-sidebar -->
-	<?php endif; ?>
+	<a class="button -cta -external" href="/take-action">Take Action</a>
+	<a class="button -external" href="/donate">Donate</a>
+	<a class="button -external" href="/volunteer">Volunteer</a>
+	<a class="button -expand" href="javascript:void(0)">Categories</a>
+	<ul class="categories">
+		<?php
+			$categories = get_categories();
+			foreach ( $categories as $category ) {
+				echo "<li class=\"category\"><a href=\"" . get_category_link( $category->term_id ) . "\">" . $category->name . "</a></li>";
+			}
+		?>
+	</ul>
+	<a class="button -expand" href="javascript:void(0)">Archives</a>
+	<ul class="archives">
+		<?php wp_get_archives(); ?>
+	</ul>
 </aside>
