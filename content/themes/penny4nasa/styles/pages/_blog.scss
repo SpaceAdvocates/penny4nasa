@@ -43,18 +43,10 @@ body.blog {
 		@include span-columns(3);
 		@include omega;
 
-		.widget {
+		.button {
 			margin-bottom: $gutter-width;
-		}
-		.textwidget a {
-			@include button-icon($fa-var-external-link);
-		}
-		.widget-title {
-			@extend %button-blue;
-			@include button-icon($fa-var-plus);
-			font-size: 1rem;
 
-			&:not(.open) + ul {
+			&.-expand:not(.open) + ul {
 				display: none;
 			}
 		}

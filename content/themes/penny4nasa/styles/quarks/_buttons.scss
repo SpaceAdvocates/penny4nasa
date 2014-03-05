@@ -50,4 +50,10 @@
 	&.-cta {
 		@extend %button-red;
 	}
+	&.-external {
+		@include button-icon($fa-var-external-link);
+	}
+	&.-expand {
+		@include button-icon($fa-var-plus);
+	}
 }

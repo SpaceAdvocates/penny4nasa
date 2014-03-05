@@ -34,5 +34,4 @@ $social-links: facebook, twitter, google-plus, youtube;
 .hero-cta--link {
 	@include span-columns(4);
 	@include pre(1);
-	@extend %button-red;
 }

@@ -140,7 +140,7 @@
 	// 	console.log(response);
 	// }
 
-	$('.sidebar').find('.widget-title').on('click', function () {
+	$('.sidebar').find('.button.-expand').on('click', function () {
 		$(this).toggleClass('open');
 	});
 })(jQuery);

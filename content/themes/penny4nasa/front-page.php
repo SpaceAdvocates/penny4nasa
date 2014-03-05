@@ -15,21 +15,21 @@
 			<p class="hero-cta--subheader">
 				To increase NASA's funding to 1% by encouraging popular support for NASA through education and outreach.
 			</p>
-			<a href="javascript:void(0)" class="hero-cta--link">
+			<a class="hero-cta--link button -cta" href="/take-action">
 				Take Action
 			</a>
 			<ul class="social-links">
 				<li class="social-link facebook">
-					<a href="javascript:void(0)"><i></i></a>
+					<a href="//www.facebook.com/PennyForNASA"></a>
 				</li>
 				<li class="social-link twitter">
-					<a href="javascript:void(0)"><i></i></a>
+					<a href="//twitter.com/Penny4NASA1"></a>
 				</li>
 				<li class="social-link google-plus">
-					<a href="javascript:void(0)"><i></i></a>
+					<a href="//plus.google.com/104209973472169534234/posts"></a>
 				</li>
 				<li class="social-link youtube">
-					<a href="javascript:void(0)"><i></i></a>
+					<a href="//www.youtube.com/playlist?list=PLC9B5D1A15F66C1A9"></a>
 				</li>
 			</ul>
 		</div>
