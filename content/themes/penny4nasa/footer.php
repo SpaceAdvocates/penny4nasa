@@ -12,7 +12,7 @@
 							<a href="javascript:void(0);">Blog</a>
 						</li>
 						<li class="footer-link">
-							<a href="javascript:void(0);">Resources</a>
+							<a href="javascript:void(0);">FAQ</a>
 						</li>
 						<li class="footer-link">
 							<?php get_template_part( 'content', 'logo' ); ?>
