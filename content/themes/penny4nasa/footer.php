@@ -6,28 +6,25 @@
 				<div class="container">
 					<ul class="footer-links">
 						<li class="footer-link">
-							<a href="javascript:void(0);">The Mission</a>
+							<a href="javascript:void(0);">About</a>
 						</li>
 						<li class="footer-link">
-							<a href="javascript:void(0);">About</a>
+							<a href="javascript:void(0);">Blog</a>
+						</li>
+						<li class="footer-link">
+							<a href="javascript:void(0);">Resources</a>
+						</li>
+						<li class="footer-link">
+							<?php get_template_part( 'content', 'logo' ); ?>
+						</li>
+						<li class="footer-link">
+							<a href="javascript:void(0);">Press Room</a>
 						</li>
 						<li class="footer-link">
 							<a href="javascript:void(0);">Contact</a>
 						</li>
 						<li class="footer-link">
-							<?php get_template_part( 'content', 'logo' ); ?>
-						</li>
-<!-- 						<li class="footer-link">
-							<a href="javascript:void(0);">Get Involved</a>
-						</li> -->
-						<li class="footer-link">
-							<a href="javascript:void(0);">Blog</a>
-						</li>
-						<li class="footer-link">
-							<a href="javascript:void(0);">Videos</a>
-						</li>
-						<li class="footer-link">
-							<a href="javascript:void(0);">Press Room</a>
+							<a href="javascript:void(0);">Privacy Policy</a>
 						</li>
 					</ul>
 					<p class="copyright">&copy; 2014 Space Advocates. All rights reserved.</p>
