@@ -126,3 +126,21 @@
 		}
 	} );
 } )( jQuery );
+
+
+/**
+ * Custom Scripts
+ */
+(function ($) {
+	// $.getJSON('https://api.twitter.com/1.1/statuses/user_timeline.json?screen_name=penny4nasa1&callback=?', function (response) {
+	// 	console.log(response);
+	// });
+
+	// function parseTwitterFeed(response) {
+	// 	console.log(response);
+	// }
+
+	$('.sidebar').find('.widget-title').on('click', function () {
+		$(this).toggleClass('open');
+	});
+})(jQuery);

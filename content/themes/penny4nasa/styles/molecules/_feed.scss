@@ -1,7 +1,4 @@
 .feed {
-	.container {
-		@include container;
-	}
 	.post {
 		@include isolate-grid(4);
 	}

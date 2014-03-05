@@ -28,6 +28,8 @@ $social-link-size: 0.5em;
 		&.#{$service} {
 			a {
 				@include button($service-color);
+				display: inline-block;
+				padding: 0;
 
 				&:hover {
 					background-color: $service-color;
@@ -40,15 +42,13 @@ $social-link-size: 0.5em;
 		}
 	}
 	a {
-		display: inline-block;
 		text-decoration: none;
 	}
 	i {
-		@extend .fa;
+		@extend .#{$fa-css-prefix};
 		@include box-sizing(content-box);
 
 		&:before {
-			// font-size: $social-link-size;
 			display: block;
 			width: 1em;
 		}

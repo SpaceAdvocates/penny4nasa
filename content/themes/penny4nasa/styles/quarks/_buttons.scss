@@ -1,3 +1,4 @@
+// Helpers
 %button {
 	@include clean-link(inherit);
 	display: block;
@@ -5,11 +6,13 @@
 	padding: 1em;
 	border-radius: $default-border-radius;
 	text-shadow: 0 -1px 0 rgba($black, 0.25);
+	text-align: center;
+	cursor: pointer;
 }
 
 @mixin button ($background-color, $color: $light-text-color) {
+	@extend %button;
 	background-color: rgba($background-color, 0.8);
-	// border-bottom: ($default-border-width * 2) $default-border-style darken($background-color, 30%);
 	color: $color;
 	@include transition(background-color $base-transition-duration $default-transition-easing);
 
@@ -19,7 +22,32 @@
 	}
 }
 
-%red-button {
-	@extend %button;
+%button-icon {
+	@extend .#{$fa-css-prefix};
+	margin-top: 0.1em;
+	margin-left: 0.5em;
+}
+
+@mixin button-icon ($icon) {
+	&:after {
+		@extend %button-icon;
+		content: $icon;
+	}
+}
+
+// Styles
+%button-red {
 	@include button($red);
+}
+
+%button-blue {
+	@include button($blue);
+}
+
+.button {
+	@extend %button-blue;
+
+	&.-cta {
+		@extend %button-red;
+	}
 }

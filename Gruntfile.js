@@ -46,7 +46,7 @@ module.exports = function (grunt) {
 				tasks: ['compass:server', 'autoprefixer']
 			},
 			styles: {
-				files: ['<%= yeoman.app %>/styles/{,*/}*.css'],
+				files: ['<%= yeoman.app %>/style.css'],
 				tasks: ['newer:copy:styles', 'autoprefixer']
 			},
 			livereload: {
@@ -312,7 +312,7 @@ module.exports = function (grunt) {
 			styles: {
 				expand: true,
 				dot: true,
-				cwd: '<%= yeoman.app %>/styles',
+				cwd: '<%= yeoman.app %>',
 				dest: '.tmp/styles/',
 				src: '{,*/}*.css'
 			}

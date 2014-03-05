@@ -5,9 +5,6 @@ $social-links: facebook, twitter, google-plus, youtube;
 	background-color: rgba($black, 0.7);
 	padding: $grid-padding * 3;
 
-	.container {
-		@include container;
-	}
 	.content {
 		@include span-columns(8);
 		@include isolate(3);
@@ -37,5 +34,5 @@ $social-links: facebook, twitter, google-plus, youtube;
 .hero-cta--link {
 	@include span-columns(4);
 	@include pre(1);
-	@extend %red-button;
+	@extend %button-red;
 }

@@ -27,9 +27,6 @@ $footer-link-count: 7;
 	a {
 		@include clean-link;
 	}
-	.container {
-		@include container;
-	}
 	.footer-links {
 		@extend %horizontal-list;
 		@include center-columns(6);

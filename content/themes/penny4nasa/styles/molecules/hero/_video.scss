@@ -1,9 +1,6 @@
 .hero-video {
 	@extend %hero;
 
-	.container {
-		@include container;
-	}
 	.video {
 		@include center-columns(10);
 		position: relative;

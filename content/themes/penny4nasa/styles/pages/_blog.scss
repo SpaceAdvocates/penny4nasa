@@ -1,0 +1,70 @@
+body.blog {
+	.site-main {
+		padding-top: $gutter-width * 2;
+	}
+	.post {
+		@include span-columns(6);
+		margin-bottom: $gutter-width;
+
+		& + .post {
+			@include span-columns(3);
+
+			.entry-header {
+				font-size: 0.5em;
+			}
+		}
+		.entry-header {
+			padding: 1.5em;
+			text-align: center;
+			background-color: rgba($black, 0.9);
+		}
+		.entry-title {
+			margin: 0;
+		}
+		.entry-summary {
+			display: none;
+		}
+		.entry-meta {
+			display: none;
+		}
+		.post-thumbnail {
+			display: block;
+
+			img {
+				display: block;
+			}
+		}
+		img {
+			width: 100%;
+			height: auto;
+		}
+	}
+	.sidebar {
+		@include span-columns(3);
+		@include omega;
+
+		.widget {
+			margin-bottom: $gutter-width;
+		}
+		.textwidget a {
+			@include button-icon($fa-var-external-link);
+		}
+		.widget-title {
+			@extend %button-blue;
+			@include button-icon($fa-var-plus);
+			font-size: 1rem;
+
+			&:not(.open) + ul {
+				display: none;
+			}
+		}
+	}
+	.tweet {
+		margin-bottom: $gutter-width;
+
+		.container {
+			background-color: rgba($twitter-color, 0.2);
+			padding: $grid-padding;
+		}
+	}
+}

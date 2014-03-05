@@ -1,6 +1,4 @@
-* {
-	@include border-box-sizing;
-}
+@include border-box-sizing;
 
 body {
 	font-size: $base-font-size;
@@ -12,4 +10,8 @@ body {
 .wrapper {
 	@extend %sticky-wrapper;
 	@include background(image-url("#{$theme-images-directory}/stars.svg"), linear-gradient(top, $dark-blue, $black));
+}
+
+.container {
+	@include container;
 }

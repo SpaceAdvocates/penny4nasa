@@ -20,24 +20,16 @@
 			</a>
 			<ul class="social-links">
 				<li class="social-link facebook">
-					<a href="javascript:void(0)">
-						<i></i>
-					</a>
+					<a href="javascript:void(0)"><i></i></a>
 				</li>
 				<li class="social-link twitter">
-					<a href="javascript:void(0)">
-						<i></i>
-					</a>
+					<a href="javascript:void(0)"><i></i></a>
 				</li>
 				<li class="social-link google-plus">
-					<a href="javascript:void(0)">
-						<i></i>
-					</a>
+					<a href="javascript:void(0)"><i></i></a>
 				</li>
 				<li class="social-link youtube">
-					<a href="javascript:void(0)">
-						<i></i>
-					</a>
+					<a href="javascript:void(0)"><i></i></a>
 				</li>
 			</ul>
 		</div>

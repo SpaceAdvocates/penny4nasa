@@ -1,6 +1,13 @@
 <?php get_header(); ?>
 
+	<div class="tweet">
+		<div class="container">
+			Tweet
+		</div>
+	</div>
+
 	<div class="container">
+		<?php get_sidebar(); ?>
 		<?php
 			if ( have_posts() ) :
 				// Start the Loop.
@@ -23,5 +30,4 @@
 		?>
 	</div>
 
-<?php get_sidebar(); ?>
 <?php get_footer(); ?>

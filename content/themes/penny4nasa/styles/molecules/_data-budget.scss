@@ -4,9 +4,6 @@ $budget-header-small-size: 0.5em;
 .data-budget {
 	@extend %hero;
 
-	.container {
-		@include container;
-	}
 	.graph-budget {
 		margin-top: ($budget-header-size * 3) * -1;
 	}

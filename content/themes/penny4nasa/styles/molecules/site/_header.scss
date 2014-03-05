@@ -1,3 +1,5 @@
+$header-p4n-logo-size: 2em;
+
 .site-header {
 	font-family: $header-font-family;
 	color: $white;
@@ -8,7 +10,6 @@
 		@include clean-link;
 	}
 	.container {
-		@include container;
 		padding-top: $grid-padding / 2;
 		padding-bottom: $grid-padding / 2;
 		display: flex;
@@ -18,12 +19,31 @@
 
 .site-title {
 	@include span-columns(5);
+	font-size: 2em;
+	color: $blue;
 	display: flex;
+
+	.p4n-logo {
+		width: $header-p4n-logo-size;
+		height: $header-p4n-logo-size;
+		float: left;
+	}
+	.title {
+		font-size: 1.5em;
+		float: left;
+		line-height: 1;
+		padding: $grid-padding / 2;
+
+		span {
+			color: $red;
+		}
+	}
 }
 
 .site-navigation {
-	@include span-columns(7);
+	@include span-columns(10);
 	@include omega;
+	font-size: 1.3em;
 	display: flex;
 	align-items: center;
 
