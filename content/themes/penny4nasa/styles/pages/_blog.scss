@@ -3,20 +3,13 @@ body.blog {
 		padding-top: $gutter-width * 2;
 	}
 	.post {
-		@include span-columns(6);
+		@include container;
+		@include span-columns(9);
+		background-color: rgba($black, 0.8);
 		margin-bottom: $gutter-width;
 
-		& + .post {
-			@include span-columns(3);
-
-			.entry-header {
-				font-size: 0.5em;
-			}
-		}
 		.entry-header {
-			padding: 1.5em;
-			text-align: center;
-			background-color: rgba($black, 0.9);
+			@include span-columns(9 omega);
 		}
 		.entry-title {
 			margin: 0;
@@ -28,7 +21,7 @@ body.blog {
 			display: none;
 		}
 		.post-thumbnail {
-			display: block;
+			@include span-columns(3);
 
 			img {
 				display: block;
