@@ -27,28 +27,21 @@ $social-link-size: 0.5em;
 
 		&.#{$service} {
 			a {
+				@extend %fa-#{$service};
+				@extend %social-link;
 				@include button($service-color);
-				display: inline-block;
-				padding: 0;
 
 				&:hover {
 					background-color: $service-color;
 				}
 			}
-			i {
-				@extend %fa-#{$service};
-				@extend %social-link;
-			}
 		}
 	}
 	a {
 		text-decoration: none;
-	}
-	i {
-		@extend .#{$fa-css-prefix};
-		@include box-sizing(content-box);
 
 		&:before {
+			@extend .#{$fa-css-prefix};
 			display: block;
 			width: 1em;
 		}
