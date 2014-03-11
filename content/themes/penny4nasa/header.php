@@ -30,7 +30,26 @@
 						</a>
 					</div>
 					<nav class="site-navigation" role="navigation">
-						<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'nav-menu' ) ); ?>
+						<ul class="nav-menu">
+							<li class="nav-menu--item">
+								<a href="javascript:void(0)">The Mission</a>
+							</li>
+							<li class="nav-menu--item">
+								<a href="javascript:void(0)">Blog</a>
+							</li>
+							<li class="nav-menu--item">
+								<a href="javascript:void(0)">Press Room</a>
+							</li>
+							<li class="nav-menu--item">
+								<a href="//www.youtube.com/channel/UCHWBRuQtDWvYqPdaGzkGjLA">Videos</a>
+							</li>
+							<li class="nav-menu--item">
+								<a href="javascript:void(0)">Donate</a>
+							</li>
+							<li class="nav-menu--item">
+								<a href="javascript:void(0)">Take Action</a>
+							</li>
+						</ul>
 					</nav>
 				</div>
 			</header><!-- #site-header -->

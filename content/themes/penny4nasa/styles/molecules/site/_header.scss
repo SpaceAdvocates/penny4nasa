@@ -53,14 +53,13 @@ $header-p4n-logo-size: 2em;
 	.nav-menu {
 		display: flex;
 		flex-direction: row;
+	}
+	.nav-menu--item {
+		padding: 0 0.5em;
+		text-align: center;
 
-		.menu-item {
-			width: 20%;
-			text-align: center;
-
-			&:last-child {
-				color: $red;
-			}
+		&:last-child {
+			color: $red;
 		}
 	}
 }
