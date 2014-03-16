@@ -32,22 +32,22 @@
 					<nav class="site-navigation" role="navigation">
 						<ul class="nav-menu">
 							<li class="nav-menu--item">
-								<a href="javascript:void(0)">The Mission</a>
+								<a href="/mission">The Mission</a>
 							</li>
 							<li class="nav-menu--item">
-								<a href="javascript:void(0)">Blog</a>
+								<a href="/blog">Blog</a>
 							</li>
 							<li class="nav-menu--item">
-								<a href="javascript:void(0)">Press Room</a>
+								<a href="/press">Press Room</a>
 							</li>
 							<li class="nav-menu--item">
 								<a href="//www.youtube.com/channel/UCHWBRuQtDWvYqPdaGzkGjLA">Videos</a>
 							</li>
 							<li class="nav-menu--item">
-								<a href="javascript:void(0)">Donate</a>
+								<a href="/donate">Donate</a>
 							</li>
 							<li class="nav-menu--item">
-								<a href="javascript:void(0)">Take Action</a>
+								<a href="/take-action">Take Action</a>
 							</li>
 						</ul>
 					</nav>

@@ -1,0 +1,12 @@
+.sidebar {
+	@include span-columns(3);
+	@include omega;
+
+	.button {
+		margin-bottom: $gutter-width;
+
+		&.-expand:not(.open) + ul {
+			display: none;
+		}
+	}
+}

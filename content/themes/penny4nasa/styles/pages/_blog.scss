@@ -39,18 +39,6 @@ body.blog {
 			height: auto;
 		}
 	}
-	.sidebar {
-		@include span-columns(3);
-		@include omega;
-
-		.button {
-			margin-bottom: $gutter-width;
-
-			&.-expand:not(.open) + ul {
-				display: none;
-			}
-		}
-	}
 	.tweet {
 		margin-bottom: $gutter-width;
 
