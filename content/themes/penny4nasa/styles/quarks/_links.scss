@@ -3,7 +3,7 @@
 }
 
 a {
-	color: $red;
+	color: $blue;
 	cursor: pointer;
 	@include transition(color $base-transition-duration $default-transition-easing);
 
