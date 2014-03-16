@@ -3,7 +3,7 @@
 	@include clean-link(inherit);
 	display: block;
 	font-family: $button-font-family;
-	padding: 1em;
+	padding: 1em 2em;
 	border-radius: $default-border-radius;
 	text-shadow: 0 -1px 0 rgba($black, 0.25);
 	text-align: center;

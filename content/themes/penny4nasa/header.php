@@ -17,7 +17,7 @@
 		<link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700' rel='stylesheet' type='text/css'>
 		<?php wp_head(); ?>
 	</head>
-	<body <?php body_class(); ?>>
+	<body <?php body_class(is_page() ? "page-{$post->post_name}" : ''); ?>>
 		<div class="wrapper">
 			<header class="site-header">
 				<div class="container">

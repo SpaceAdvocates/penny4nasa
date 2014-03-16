@@ -3,7 +3,7 @@
 
 	.content {
 		@include span-columns(9);
-		padding: $grid-padding;
+		padding: $grid-padding $grid-padding 0;
 		background-color: rgba($black, $base-color-opacity);
 	}
 	.sidebar {

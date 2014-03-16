@@ -1,0 +1,19 @@
+%base-form-element {
+	border: none;
+	padding: 1em;
+	background-color: $dark-blue;
+	color: $white;
+}
+
+[type="submit"] {
+	@extend %button-blue;
+	border: none;
+}
+
+input {
+	@extend %base-form-element;
+}
+
+textarea {
+	@extend %base-form-element;
+}

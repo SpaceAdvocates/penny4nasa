@@ -36,30 +36,24 @@
 
 //// Utils
 // Helper classes and mixins
-@import "utils/*";
 @import "utils/**/*";
 
 //// Quarks
 // These are basic HTML element styles
-@import "quarks/*";
 @import "quarks/**/*";
 
 //// Atoms
 // Combinations of quarks, small regions of a view
-@import "atoms/*";
 @import "atoms/**/*";
 
 //// Molecules
 // Combinations of quarks and atoms, medium to large regions of a view
-@import "molecules/*";
 @import "molecules/**/*";
 
 //// Templates
 // Cluster of pages
-@import "templates/*";
 @import "templates/**/*";
 
 //// Pages
 // Page specific styling
-@import "pages/*";
 @import "pages/**/*";
