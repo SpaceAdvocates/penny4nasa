@@ -9,7 +9,7 @@ body {
 
 .wrapper {
 	@extend %sticky-wrapper;
-	@include background(image-url("#{$theme-images-directory}/stars.svg"), linear-gradient(top, $dark-blue, $black));
+	@include background($base-background-images);
 }
 
 .container {
