@@ -6,25 +6,25 @@
 				<div class="container">
 					<ul class="footer-links">
 						<li class="footer-link">
-							<a href="javascript:void(0);">About</a>
+							<a href="/about">About</a>
 						</li>
 						<li class="footer-link">
-							<a href="javascript:void(0);">Blog</a>
+							<a href="/blog">Blog</a>
 						</li>
 						<li class="footer-link">
-							<a href="javascript:void(0);">FAQ</a>
+							<a href="/faq">FAQ</a>
 						</li>
 						<li class="footer-link">
 							<?php get_template_part( 'content', 'logo' ); ?>
 						</li>
 						<li class="footer-link">
-							<a href="javascript:void(0);">Press Room</a>
+							<a href="/press">Press Room</a>
 						</li>
 						<li class="footer-link">
-							<a href="javascript:void(0);">Contact</a>
+							<a href="/contact">Contact</a>
 						</li>
 						<li class="footer-link">
-							<a href="javascript:void(0);">Privacy Policy</a>
+							<a href="/privacy-policy">Privacy Policy</a>
 						</li>
 					</ul>
 					<p class="copyright">&copy; 2014 Space Advocates. All rights reserved.</p>
