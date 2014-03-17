@@ -5,5 +5,13 @@
 		&.-expand:not(.open) + ul {
 			display: none;
 		}
+		& + ul {
+			margin-bottom: $gutter-width;
+		}
+	}
+	li {
+		a {
+			@include clean-link;
+		}
 	}
 }

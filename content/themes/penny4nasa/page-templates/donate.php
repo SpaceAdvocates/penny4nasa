@@ -12,10 +12,13 @@ get_header(); ?>
 <div class="container">
 	<?php get_sidebar(); ?>
 	<div class="content">
+		<h1>
+			<?php the_title(); ?>
+		</h1>
 		<div class="donate-method">
-			<h1 class="donate-method--title">via Paypal</h1>
+			<h2 class="donate-method--title">via Paypal</h2>
 			<div class="paypal-method">
-				<h2>Once</h2>
+				<h3>Once</h3>
 				<form action="https://www.paypal.com/cgi-bin/webscr" method="post">
 					<input type="hidden" name="cmd" value="_s-xclick" />
 					<input type="hidden" name="hosted_button_id" value="FZ9RY42U8D4A2" />
@@ -24,7 +27,7 @@ get_header(); ?>
 				</form>
 			</div>
 			<div class="paypal-method">
-				<h2>Recurring Donations</h2>
+				<h3>Recurring Donations</h3>
 				<form action="https://www.paypal.com/cgi-bin/webscr" method="post">
 					<select name="os0">
 						<option value="$1 Monthly">$1.00 USD - Monthly</option>
@@ -44,7 +47,7 @@ get_header(); ?>
 			</div>
 		</div>
 		<div class="donate-method">
-			<h1 class="donate-method--title">via Snail Mail</h1>
+			<h2 class="donate-method--title">via Snail Mail</h2>
 			<small>
 				We can also accept a check or money order made payable to <strong>Space Advocates</strong>. Please mail your donations to:
 			</small>

@@ -5,6 +5,7 @@
 		@include span-columns(9);
 		padding: $grid-padding $grid-padding 0;
 		background-color: rgba($black, $base-color-opacity);
+		@include border-radius;
 	}
 	.sidebar {
 		@include span-columns(3);

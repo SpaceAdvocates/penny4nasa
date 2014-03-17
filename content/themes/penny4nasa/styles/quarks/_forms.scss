@@ -1,19 +1,23 @@
 %base-form-element {
 	border: none;
 	padding: 1em;
+	margin: 0;
 	background-color: $dark-blue;
 	color: $white;
 }
 
 [type="submit"] {
 	@extend %button-blue;
+	display: inline-block;
+	margin: 0;
 	border: none;
 }
 
-input {
-	@extend %base-form-element;
-}
-
+[type="text"],
+[type="email"],
+[type="url"],
+[type="search"],
 textarea {
 	@extend %base-form-element;
+	font-family: $special-font-family;
 }

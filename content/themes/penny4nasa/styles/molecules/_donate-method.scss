@@ -1,7 +1,10 @@
 .donate-method {
 	@include span-columns(6);
-	@include nth-omega(2);
-	padding: $grid-padding;
+	padding: $grid-padding $grid-padding 0;
+
+	&:nth-of-type(2) {
+		@include omega;
+	}
 
 	.paypal-method {
 		@include span-columns(6);

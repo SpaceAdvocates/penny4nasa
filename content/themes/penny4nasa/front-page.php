@@ -8,7 +8,7 @@
 
 <div class="hero-cta">
 	<div class="container">
-		<div class="content">
+		<div class="hero-content">
 			<h1 class="hero-cta--header">
 				Join our Mission
 			</h1>

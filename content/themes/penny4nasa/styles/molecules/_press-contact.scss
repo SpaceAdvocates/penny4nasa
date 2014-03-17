@@ -1,0 +1,24 @@
+$press-contact-image-column-span: 2;
+
+.press-contact {
+	@include border-radius;
+	font-size: 0.8em;
+	padding: $grid-padding * 2;
+	margin-bottom: $gutter-width;
+	background-color: $dark-blue;
+	overflow: hidden;
+	text-align: center;
+
+	p {
+		margin-bottom: 0.2em;
+	}
+}
+
+.press-contact--title {
+	font-size: 1.3em;
+}
+
+.press-contact--image {
+	@include border-radius;
+	margin-bottom: $gutter-width;
+}
