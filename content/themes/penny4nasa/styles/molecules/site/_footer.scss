@@ -1,28 +1,26 @@
 $footer-link-count: 7;
 
-%moon-image {
-	display: block;
-	content: "";
-	width: 100%;
-	height: 5.5rem;
-	background: url($image-moon-top) no-repeat;
-	background-size: cover;
-}
-
 .site-footer {
 	@extend %sticky-footer;
 	font-size: 0.8em;
 	line-height: $grid-padding;
 	color: $dark-text-color;
-	padding-top: $grid-padding;
+	padding-top: 5rem;
 	text-align: center;
 
 	&:before {
-		@extend %moon-image;
+		display: block;
+		position: absolute;
+		content: "";
+		width: 100%;
+		height: 7.5rem;
+		margin-top: -3rem;
+		background: url($image-moon-top) no-repeat;
+		background-size: 100%;
 	}
 	.content {
 		background-color: $moon-grey;
-		padding: $grid-padding 0 ($grid-padding / 2);
+		padding: 6rem 0 0.5rem;
 	}
 	a {
 		@include clean-link;
