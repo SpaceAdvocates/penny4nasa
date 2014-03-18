@@ -19,8 +19,8 @@
 
 get_header(); ?>
 
-	<section id="primary" class="content-area">
-		<div id="content" class="site-content" role="main">
+	<div class="feed">
+		<div class="container">
 
 			<?php if ( have_posts() ) : ?>
 
@@ -64,11 +64,11 @@ get_header(); ?>
 					get_template_part( 'content', 'none' );
 
 				endif;
+
+				get_sidebar();
 			?>
-		</div><!-- #content -->
-	</section><!-- #primary -->
+		</div><!-- .container -->
+	</div><!-- .feed -->
 
 <?php
-get_sidebar( 'content' );
-get_sidebar();
 get_footer();
