@@ -13,6 +13,8 @@
 		}
 	}
 	li {
+		line-height: 1.2;
+
 		a {
 			@include clean-link;
 		}
