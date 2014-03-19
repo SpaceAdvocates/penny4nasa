@@ -9,7 +9,7 @@
 			margin-bottom: $gutter-width;
 			margin-top: $gutter-width * -0.5;
 			padding: $grid-padding;
-			background-color: rgba($black, $base-color-opacity);
+			@include heavy-opacity($black);
 		}
 	}
 	li {

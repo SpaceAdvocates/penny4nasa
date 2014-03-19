@@ -11,13 +11,15 @@
 
 get_header(); ?>
 
-	<section id="primary" class="content-area">
-		<div id="content" class="site-content" role="main">
+	<div class="feed">
+		<div class="container">
 
 			<?php if ( have_posts() ) : ?>
 
-			<header class="archive-header">
-				<h1 class="archive-title"><?php printf( __( 'Category Archives: %s', 'twentyfourteen' ), single_cat_title( '', false ) ); ?></h1>
+			<header class="page-header">
+				<h1 class="page-title">
+					<?php printf( __( 'Category Archives: %s', 'twentyfourteen' ), single_cat_title( '', false ) ); ?>
+				</h1>
 
 				<?php
 					// Show an optional term description.
@@ -26,9 +28,11 @@ get_header(); ?>
 						printf( '<div class="taxonomy-description">%s</div>', $term_description );
 					endif;
 				?>
-			</header><!-- .archive-header -->
+			</header>
 
 			<?php
+					get_sidebar();
+
 					// Start the Loop.
 					while ( have_posts() ) : the_post();
 
@@ -44,15 +48,15 @@ get_header(); ?>
 					twentyfourteen_paging_nav();
 
 				else :
+					get_sidebar();
+
 					// If no content, include the "No posts found" template.
 					get_template_part( 'content', 'none' );
 
 				endif;
 			?>
-		</div><!-- #content -->
-	</section><!-- #primary -->
+		</div>
+	</div>
 
 <?php
-get_sidebar( 'content' );
-get_sidebar();
 get_footer();

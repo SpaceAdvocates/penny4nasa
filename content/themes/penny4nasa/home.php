@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
 	<div class="container">
-		<?php //get_sidebar(); ?>
+		<?php get_sidebar(); ?>
 		<?php
 			if ( have_posts() ) :
 				// Start the Loop.

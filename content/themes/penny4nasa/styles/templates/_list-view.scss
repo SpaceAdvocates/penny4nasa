@@ -1,10 +1,15 @@
 body.list-view {
+	.page-header {
+		@include span-columns(12);
+		@include omega;
+		padding: $grid-padding $grid-padding 0;
+		background-color: rgba($black, 0.8);
+		margin-bottom: $gutter-width;
+	}
 	.post, .page {
-		@include span-columns(10);
-		@include isolate(2);
+		@include span-columns(9);
 		display: flex;
 		flex-direction: row;
-		clear: both;
 		margin-bottom: $gutter-width;
 
 		.entry-header {

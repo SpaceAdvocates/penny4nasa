@@ -1,0 +1,25 @@
+body.single {
+	.post {
+		@include span-columns(9);
+	}
+	.post-thumbnail {
+		text-align: center;
+		padding: $grid-padding;
+		@include light-opacity($blue);
+
+		img {
+			max-width: 100%;
+			height: auto;
+		}
+	}
+	.entry-header {
+		padding: $grid-padding $grid-padding 0;
+		@include heavy-opacity($black);
+		// background-color: $light-grey;
+	}
+	.entry-content {
+		padding: $grid-padding $grid-padding 0;
+		@include light-opacity($black);
+		// background-color: $light-grey;
+	}
+}
