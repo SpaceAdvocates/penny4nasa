@@ -1,14 +1,19 @@
 language: node_js
 node_js:
- - "0.11"
- - "0.10"
+- '0.11'
+- '0.10'
 before_script:
- # install dependencies
- - gem update --system
- - gem install compass --pre
- - gem install susy sass-globbing
- - npm install -g grunt-cli bower
+- gem update --system
+- gem install compass --pre
+- gem install susy sass-globbing
+- npm install -g grunt-cli bower
 script:
- # We want to gate on passing tests and a successful build
- - bower install
- - grunt
+- bower install
+- grunt
+deploy:
+  provider: cloudcontrol
+  email: jpspens@gmail.com
+  password:
+    secure: KQ0uOtXcYmJJdzHKzzGGwX3A/5SXydd9kza35Af71PJm9a08hR/vtefRIPVIeQu0+cq/hLUnlw6hPs7pVKx1frGWoMScFJI8QBz+wRbDdydUH2reYvAz/+hC5AEu2FuA2+tgmqgruboPZ95NasykAblD21/AD5s/3UZlaEG1Deg=
+  deployment: penny4nasa/default
+  skip_cleanup: true
