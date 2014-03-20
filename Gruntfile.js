@@ -330,7 +330,7 @@ module.exports = function (grunt) {
 				'copy:styles'
 			],
 			dist: [
-				'compass',
+				'compass:dist',
 				'copy:styles'
 				// 'imagemin'
 				// 'svgmin'
