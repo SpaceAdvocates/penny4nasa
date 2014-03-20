@@ -23,6 +23,7 @@ Thumbs.db
 
 # WordPress + popular plugin generated — adapted from:
 # https://github.com/github/gitignore/blob/master/WordPress.gitignore
+local-config.php
 sitemap.xml
 sitemap.xml.gz
 content/advanced-cache.php

@@ -13,24 +13,33 @@
  *
  * @package WordPress
  */
- 
+
 // Include local configuration
 if (file_exists(dirname(__FILE__) . '/local-config.php')) {
 	include(dirname(__FILE__) . '/local-config.php');
 }
 
+# read the credentials file
+$string = file_get_contents($_ENV['CRED_FILE'], false);
+if ($string == false) {
+	// die('FATAL: Could not read credentials file');
+}
+
+# the file contains a JSON string, decode it and return an associative array
+$creds = json_decode($string, true);
+
 // Global DB config
 if (!defined('DB_NAME')) {
-	define('DB_NAME', 'wp_penny4nasa');
+	define('DB_NAME', $creds['MYSQLS']['MYSQLS_DATABASE']);
 }
 if (!defined('DB_USER')) {
-	define('DB_USER', 'root');
+	define('DB_USER', $creds['MYSQLS']['MYSQLS_USERNAME']);
 }
 if (!defined('DB_PASSWORD')) {
-	define('DB_PASSWORD', '');
+	define('DB_PASSWORD', $creds['MYSQLS']['MYSQLS_PASSWORD']);
 }
 if (!defined('DB_HOST')) {
-	define('DB_HOST', '127.0.0.1');
+	define('DB_HOST', $creds['MYSQLS']['MYSQLS_HOSTNAME']);
 }
 
 /** Database Charset to use in creating database tables. */
