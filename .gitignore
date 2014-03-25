@@ -1,5 +1,5 @@
 # Yeoman
-bower_components
+#bower_components
 node_modules
 
 # Ignore automatically generated cruft
