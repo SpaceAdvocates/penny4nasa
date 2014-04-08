@@ -20,6 +20,22 @@ body.single {
 	.entry-content {
 		padding: $grid-padding $grid-padding 0;
 		@include heavy-opacity($black);
-		// background-color: $light-grey;
+		overflow: hidden;
+
+		ul {
+			padding: 1em 1em 0.5em 2em;
+			list-style-type: disc;
+			@include light-opacity($blue);
+			margin-bottom: 1em;
+			overflow: hidden;
+
+			li {
+				margin-bottom: 0.5em;
+			}
+		}
+	}
+	.post-comments {
+		@include span-columns(9);
+		padding: $grid-padding;
 	}
 }

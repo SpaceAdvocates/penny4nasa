@@ -8,16 +8,7 @@
 			</a>
 		</h1>
 		<div class="entry-meta">
-			<?php
-				if ( 'post' == get_post_type() )
-					twentyfourteen_posted_on();
-
-				if ( ! post_password_required() && ( comments_open() || get_comments_number() ) ) :
-			?>
-			<span class="comments-link">
-				<?php comments_popup_link( __( 'Leave a comment', 'twentyfourteen' ), __( '1 Comment', 'twentyfourteen' ), __( '% Comments', 'twentyfourteen' ) ); ?>
-			</span>
-			<?php endif; ?>
+			<?php if ( 'post' == get_post_type() ) twentyfourteen_posted_on(); ?>
 		</div><!-- .entry-meta -->
 	</header><!-- .entry-header -->
 
