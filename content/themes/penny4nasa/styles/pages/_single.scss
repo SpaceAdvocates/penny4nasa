@@ -19,7 +19,7 @@ body.single {
 	}
 	.entry-content {
 		padding: $grid-padding $grid-padding 0;
-		@include light-opacity($black);
+		@include heavy-opacity($black);
 		// background-color: $light-grey;
 	}
 }
