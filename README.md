@@ -12,12 +12,19 @@ See the [contributing docs](http://github.com/SpaceAdvocates/penny4nasa/blob/mas
 
 This site is made with [WordPress](http://wordpress.org/) and [YeoPress](https://github.com/wesleytodd/YeoPress).
 
+Assumptions:
+
+**1\.** You already have [MAMP](http://www.mamp.info/en/) or some other tool setup, or you're familiar with setting up your local dev environment some other way.
+
+**2\.** You are familiar with using [mysqldump](https://dev.mysql.com/doc/refman/5.1/en/mysqldump.html) and [importing that dump](http://www.cyberciti.biz/faq/import-mysql-dumpfile-sql-datafile-into-my-database/) to your local machine.
+
+
 To get started:
 
 **1\.** Clone the repository and its submodules:
 
 ```bash
-git clone --recursive git@github.com:SpaceAdvocates/penny4nasa
+git clone --recursive https://github.com/SpaceAdvocates/penny4nasa
 cd penny4nasa
 ```
 
@@ -27,6 +34,13 @@ cd penny4nasa
 npm install
 bower install
 ```
+
+**3\.** Create a local-config.php file to allow wordpress to access your MySQL database (Hint: [sample-local-config.php](https://gist.github.com/JohnLZeller/10080298)):
+
+```bash
+vim local-config.php
+```
+
 
 Now you're ready to do some work!
 
