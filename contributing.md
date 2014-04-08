@@ -14,7 +14,7 @@ In order for us to help you please check that you've completed the following ste
 
 ## Quick Start
 
-- Clone the repo and submodules `git clone --recursive git@github.com:SpaceAdvocates/penny4nasa`
+- Clone the repo and submodules `git clone --recursive https://github.com/SpaceAdvocates/penny4nasa`
 - Install node tools for development `npm install`
 - Install bower packages for production `bower install`
 - Run grunt to watch for changes `grunt serve`
