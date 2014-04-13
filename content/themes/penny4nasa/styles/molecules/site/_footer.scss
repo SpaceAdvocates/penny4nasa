@@ -6,7 +6,6 @@ $footer-link-count: 7;
 	line-height: $grid-padding;
 	color: $dark-text-color;
 	// padding-top: 5rem;
-	text-align: center;
 	position: relative;
 
 	&:before {
@@ -21,36 +20,62 @@ $footer-link-count: 7;
 		background-size: 100%;
 
 		@include susy-breakpoint($medium-screen, 12) {
-			height: 150%;
+			height: 6em;
+		}
+		@include susy-breakpoint($large-screen, 12) {
+			height: 7em;
 		}
 	}
 	.content {
 		background-color: $moon-grey;
-		padding: 1em 0;
+		padding: 1em;
 	}
 	a {
 		@include clean-link;
 	}
-	.footer-links {
-		@extend %horizontal-list;
-		@include span(isolate 7 at 4 of 12);
-		margin-bottom: $grid-padding / 2;
+	.footer-column {
+		@include span(1 of 2);
+		margin-bottom: 2em;
 
-		.footer-link {
-			padding: 0 1.4em;
+		@include susy-breakpoint(0 $small-screen, 12) {
+			&:last-of-type {
+				@include last;
+			}
+		}
+		@include susy-breakpoint($medium-screen, 12) {
+			@include span(1 of 4);
 		}
 	}
 	.copyright {
 		font-size: 0.9em;
+		padding-top: 2em;
 		clear: both;
+		text-align: center;
 	}
-	.p4n-logo {
-		display: block;
-		height: 1rem;
-		width: 1rem;
+	.search-form {
+		@include span(last 12);
+		margin-bottom: 1em;
 
-		* {
-			fill: $dark-text-color;
+		@include susy-breakpoint($medium-screen, 12) {
+			@include span(last 2 of 4);
+		}
+	}
+	.cta-link {
+		@include span(last 12);
+		font-size: 1.1em;
+		margin-bottom: 1em;
+
+		@include susy-breakpoint($medium-screen, 12) {
+			@include span(1 of 4);
+		}
+	}
+	.social-links {
+		@include span(last 12);
+		font-size: 1.2em;
+		margin-bottom: 1em;
+
+		@include susy-breakpoint($medium-screen, 12) {
+			@include span(last 1 of 4);
 		}
 	}
 }

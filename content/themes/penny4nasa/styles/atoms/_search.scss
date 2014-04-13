@@ -2,4 +2,15 @@
 	.screen-reader-text {
 		display: none;
 	}
+	label {
+		@include span(8);
+	}
+	.search-field {
+		font-size: 1em;
+		width: 100%;
+	}
+	.search-submit {
+		font-size: 1em;
+		@include span(last 4);
+	}
 }

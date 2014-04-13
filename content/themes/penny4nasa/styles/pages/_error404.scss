@@ -2,5 +2,9 @@ body.error404 {
 	.site-main {
 		text-align: center;
 		padding-top: 4em;
+		
+		.search-form {
+			@include span(isolate 4 at 5);
+		}
 	}
 }

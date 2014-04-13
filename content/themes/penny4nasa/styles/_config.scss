@@ -43,7 +43,7 @@ $default-border-radius: 1px;
 
 /////// Page dimension configuration ///////
 // -----------------------------------------------------------------------------
-$site-footer-height: 4.5rem;
+$site-footer-height: 11.5rem;
 
 /////// Typography configuration ///////
 // -----------------------------------------------------------------------------
@@ -73,6 +73,7 @@ $fa-font-path: $bower-components-path + "/font-awesome/fonts";
 // -----------------------------------------------------------------------------
 $susy: (
 	columns: 12,
+	global-box-sizing: border-box
 );
 
 $total-columns: 12;						// a 12-column grid

@@ -4,27 +4,50 @@
 		<footer class="site-footer" role="contentinfo">
 			<div class="content">
 				<div class="container">
-					<ul class="footer-links">
-						<li class="footer-link">
-							<a href="/about">About</a>
+					<div class="footer-column">
+						<h2>About</h2>
+						<ul class="footer-links">
+							<li class="footer-link">
+								<a href="/about">About</a>
+							</li>
+							<li class="footer-link">
+								<a href="/faq">FAQ</a>
+							</li>
+							<li class="footer-link">
+								<a href="mailto:admin@penny4nasa.org">Contact</a>
+							</li>
+						</ul>
+					</div>
+					<div class="footer-column">
+						<h2>Resources</h2>
+						<ul class="footer-links">
+							<li class="footer-link">
+								<a href="/faq">FAQ</a>
+							</li>
+							<li class="footer-link">
+								<a href="/press">Press Room</a>
+							</li>
+							<li class="footer-link">
+								<a href="/privacy-policy">Privacy Policy</a>
+							</li>
+						</ul>
+					</div>
+					<?php get_search_form(); ?>
+					<a class="cta-link button -cta" href="/take-action">
+						Take Action
+					</a>
+					<ul class="social-links">
+						<li class="social-link facebook">
+							<a href="//www.facebook.com/PennyForNASA"></a>
 						</li>
-						<li class="footer-link">
-							<a href="/blog">Blog</a>
+						<li class="social-link twitter">
+							<a href="//twitter.com/Penny4NASA1"></a>
 						</li>
-						<li class="footer-link">
-							<a href="/faq">FAQ</a>
+						<li class="social-link google-plus">
+							<a href="//plus.google.com/104209973472169534234/posts"></a>
 						</li>
-						<li class="footer-link">
-							<?php get_template_part( 'content', 'logo' ); ?>
-						</li>
-						<li class="footer-link">
-							<a href="/press">Press Room</a>
-						</li>
-						<li class="footer-link">
-							<a href="/contact">Contact</a>
-						</li>
-						<li class="footer-link">
-							<a href="/privacy-policy">Privacy Policy</a>
+						<li class="social-link youtube">
+							<a href="//www.youtube.com/playlist?list=PLC9B5D1A15F66C1A9"></a>
 						</li>
 					</ul>
 					<p class="copyright">&copy; 2014 Space Advocates. All rights reserved.</p>

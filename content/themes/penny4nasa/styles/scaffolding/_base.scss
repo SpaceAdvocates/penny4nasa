@@ -1,5 +1,3 @@
-@include border-box-sizing;
-
 body {
 	font-size: $small-font-size;
 	line-height: $base-line-height;
@@ -21,4 +19,6 @@ body {
 
 .container {
 	@include container($large-screen);
+	padding-left: 1em;
+	padding-right: 1em;
 }
