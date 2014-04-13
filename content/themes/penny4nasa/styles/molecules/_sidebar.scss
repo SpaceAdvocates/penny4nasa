@@ -1,6 +1,8 @@
 .sidebar {
-	.button {
-		margin-bottom: $gutter-width;
+	.button {		
+		@include susy-breakpoint($medium-screen, 12) {
+			margin-bottom: $gutter-width;
+		}
 
 		&.-expand:not(.open) + ul {
 			display: none;

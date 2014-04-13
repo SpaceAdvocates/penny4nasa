@@ -1,4 +1,4 @@
 @mixin center-columns($columns) {
-	@include span-columns($columns);
+	@include span($columns);
 	@include isolate(floor(($total-columns - $columns) / 2) + 1);
 }

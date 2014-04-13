@@ -1,11 +1,16 @@
 $graph-budget-height: 32em;
+$graph-budget-small-height: 20em;
 $graph-budget-margin-left: 3em;
 $graph-budget-margin-top: 1em;
 
 .graph-budget {
 	font-size: 1em;
-	height: $graph-budget-height;
+	height: $graph-budget-small-height;
 	fill: $white;
+
+	@include susy-breakpoint($medium-screen, 12) {
+		height: $graph-budget-height;
+	}
 
 	.graph {
 		@include transform(translate($graph-budget-margin-left, $graph-budget-margin-top));

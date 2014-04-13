@@ -10,7 +10,6 @@
 get_header(); ?>
 
 <div class="container">
-	<?php get_sidebar(); ?>
 	<div class="content">
 		<h1 class="page-header">
 			<?php the_title(); ?>
@@ -29,5 +28,6 @@ get_header(); ?>
 		<iframe src="https://www.popvox.com/widgets/minimap?&amp;bill=113/x35&amp;stats=1&amp;title=1&amp;sbg=3B5998&amp;sbg2=ededed&amp;sfg=ffffff&amp;lnk=3B5998&amp;bg=ffffff&amp;fg=000000&amp;fg2=333333" height="740" width="280" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
 		<iframe src="https://www.popvox.com/services/widgets/w/account/9OYZIG77VRSYFRYS/commentstream?iframe=1&amp;bills=us/113/x35&amp;sbg=b36015&amp;sbg2=e7e4dd&amp;sfg=ffffff&amp;lnk=cc6a11&amp;bg=fafafa&amp;fg=404045&amp;fg2=555555" height="740" width="280" frameborder="0"></iframe>
 	</div>
+	<?php get_sidebar(); ?>
 <?php
 get_footer();

@@ -1,18 +1,24 @@
 .donate-method {
-	@include span-columns(6);
 	padding: $grid-padding $grid-padding 0;
 
-	&:nth-of-type(2) {
-		@include omega;
+	@include susy-breakpoint($medium-screen, 12) {
+		@include span(6);
+
+		&:last-of-type {
+			@include last;
+		}
 	}
 
 	.paypal-method {
-		@include span-columns(6);
 		font-size: 0.8em;
 		text-align: center;
 
-		&:nth-of-type(2) {
-			@include omega;
+		@include susy-breakpoint($medium-screen, 12) {
+			@include span(6);
+
+			&:last-of-type {
+				@include last;
+			}
 		}
 	}
 	.address--mail {

@@ -1,6 +1,8 @@
 body.page-missions {
 	.wrapper {
-		@include background(image-url("#{$theme-images-directory}/satellite.svg") no-repeat 0 4em, $base-background-images);
+		background: image-url("#{$theme-images-directory}/satellite.svg") no-repeat 0 4em, map-get($base-background-images, stars), unquote("-webkit-" + map-get($base-background-images, gradient));
+		background: image-url("#{$theme-images-directory}/satellite.svg") no-repeat 0 4em, map-get($base-background-images, stars), unquote("-moz-" + map-get($base-background-images, gradient));
+		background: image-url("#{$theme-images-directory}/satellite.svg") no-repeat 0 4em, map-get($base-background-images, stars), map-get($base-background-images, gradient);
 	}
 	h3 {
 		font-weight: bold;

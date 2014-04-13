@@ -10,29 +10,51 @@ $header-p4n-logo-size: 2em;
 		@include clean-link;
 	}
 	.container {
-		padding-top: $grid-padding / 2;
-		padding-bottom: $grid-padding / 2;
-		display: flex;
-		flex-direction: row;
+		padding-top: $grid-padding;
+		padding-bottom: $grid-padding;
+
+		@include susy-breakpoint($medium-screen, 12) {
+			display: flex;
+			flex-direction: row;
+			padding-top: $grid-padding / 2;
+			padding-bottom: $grid-padding / 2;
+		}
 	}
 }
 
 .site-title {
-	@include span-columns(5);
+	@include span(12);
 	font-size: 2em;
 	color: $blue;
-	display: flex;
+	text-align: center;
+
+	@include susy-breakpoint($medium-screen, 12) {
+		@include span(2);
+		display: flex;
+	}
+	@include susy-breakpoint($large-screen, 12) {
+		@include span(4);
+		display: flex;
+	}
 
 	.p4n-logo {
 		width: $header-p4n-logo-size;
 		height: $header-p4n-logo-size;
-		float: left;
+
+		@include susy-breakpoint($medium-screen, 12) {
+			float: left;
+		}
 	}
 	.title {
 		font-size: 1.5em;
 		float: left;
 		line-height: 1;
 		padding: $grid-padding / 2;
+		display: none;
+
+		@include susy-breakpoint($large-screen, 12) {
+			display: block;
+		}
 
 		span {
 			color: $red;
@@ -44,18 +66,28 @@ $header-p4n-logo-size: 2em;
 }
 
 .site-navigation {
-	@include span-columns(10);
-	@include omega;
+	@include span(12 omega);
 	font-size: 1.3em;
-	display: flex;
-	align-items: center;
+
+	@include susy-breakpoint($medium-screen, 12) {
+		@include span(10 omega);
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	@include susy-breakpoint($large-screen, 12) {
+		@include span(8 omega);
+		justify-content: flex-end;
+	}
 
 	.menu-site-menu-container{
 		width: 100%;
 	}
 	.nav-menu {
-		display: flex;
-		flex-direction: row;
+		@include susy-breakpoint($medium-screen, 12) {
+			display: flex;
+			flex-direction: row;
+		}
 	}
 	.nav-menu--item {
 		padding: 0 0.5em;

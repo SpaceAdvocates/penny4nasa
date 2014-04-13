@@ -1,14 +1,22 @@
 .site-main {
 	padding-top: $grid-padding * 2;
+	padding-bottom: 7em;
 
 	.content {
-		@include span-columns(9);
+		@include span(last 12);
 		padding: $grid-padding $grid-padding 0;
 		@include heavy-opacity($black);
 		@include border-radius;
+
+		@include susy-breakpoint($medium-screen, 12) {
+			@include span(9);
+		}
 	}
 	.sidebar {
-		@include span-columns(3);
-		@include omega;
+		@include span(last 12);
+
+		@include susy-breakpoint($medium-screen, 12) {
+			@include span(last 3);
+		}
 	}
 }

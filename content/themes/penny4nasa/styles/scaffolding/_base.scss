@@ -1,17 +1,24 @@
 @include border-box-sizing;
 
 body {
-	font-size: $base-font-size;
+	font-size: $small-font-size;
+	line-height: $base-line-height;
 	font-family: $default-font-family;
 	background: $dark-blue;
 	color: $light-text-color;
+
+	@include susy-breakpoint($medium-screen, 12) {
+		font-size: $base-font-size;
+	}
 }
 
 .wrapper {
 	@extend %sticky-wrapper;
-	@include background($base-background-images);
+	background: map-get($base-background-images, stars), unquote("-webkit-" + map-get($base-background-images, gradient));
+	background: map-get($base-background-images, stars), unquote("-moz-" + map-get($base-background-images, gradient));
+	background: map-get($base-background-images, stars), map-get($base-background-images, gradient);
 }
 
 .container {
-	@include container;
+	@include container($large-screen);
 }

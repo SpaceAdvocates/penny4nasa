@@ -1,6 +1,8 @@
 body.single {
 	.post {
-		@include span-columns(9);
+		@include susy-breakpoint($medium-screen, 12) {
+			@include span(9);
+		}
 	}
 	.post-thumbnail {
 		text-align: center;
@@ -49,8 +51,11 @@ body.single {
 		}
 	}
 	.post-comments {
-		@include span-columns(9);
 		padding: $grid-padding;
+
+		@include susy-breakpoint($medium-screen, 12) {
+			@include span(9);
+		}
 	}
 	.tag-links {
 		a {

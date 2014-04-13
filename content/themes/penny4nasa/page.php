@@ -16,7 +16,6 @@ get_header();
 
 <div class="container">
 	<?php
-		get_sidebar();
 		// Start the Loop.
 		while ( have_posts() ) : the_post();
 
@@ -24,6 +23,7 @@ get_header();
 			get_template_part( 'content', 'page' );
 
 		endwhile;
+		get_sidebar();
 	?>
 </div>
 

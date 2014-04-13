@@ -2,7 +2,8 @@
   "name": "penny4nasa",
   "dependencies": {
     "jquery": "~1.10.2",
-    "font-awesome": "~4.0.3"
+    "font-awesome": "~4.0.3",
+    "susy": "~2.1.1"
   },
   "devDependencies": {}
 }

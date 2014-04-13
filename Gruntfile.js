@@ -42,7 +42,7 @@ module.exports = function (grunt) {
 				files: ['Gruntfile.js']
 			},
 			compass: {
-				files: ['<%= yeoman.app %>/styles/{,*/}*.{scss,sass}'],
+				files: ['<%= yeoman.app %>/styles/**/*.{scss,sass}'],
 				tasks: ['compass:server', 'autoprefixer']
 			},
 			styles: {
@@ -154,7 +154,7 @@ module.exports = function (grunt) {
 				httpFontsPath: '/styles/fonts',
 				relativeAssets: false,
 				assetCacheBuster: false,
-				require: ['susy', 'sass-globbing']
+				require: ['breakpoint', 'sass-globbing']
 			},
 			dist: {
 				options: {
@@ -167,6 +167,27 @@ module.exports = function (grunt) {
 				}
 			}
 		},
+
+		// Compile Sass to CSS
+		// sass: {
+		// 	server: {
+		// 		options: {
+		// 			sourcemap: true,
+		// 			style: 'expanded'
+		// 		},
+		// 		files: {
+		// 			'content/themes/penny4nasa/style.css': 'content/themes/penny4nasa/styles/style.scss'
+		// 		}
+		// 	},
+		// 	dist: {
+		// 		options: {
+		// 			style: 'compressed'
+		// 		},
+		// 		files: {
+		// 			'content/themes/penny4nasa/style.css': 'content/themes/penny4nasa/styles/style.scss'
+		// 		}
+		// 	}
+		// },
 
 		// Add vendor prefixed styles
 		autoprefixer: {

@@ -5,19 +5,26 @@ $budget-header-small-size: 0.5em;
 	@extend %hero;
 
 	.graph-budget {
-		margin-top: ($budget-header-size * 3) * -1;
+		@include susy-breakpoint($medium-screen, 12) {
+			margin-top: ($budget-header-size * 3) * -1;
+		}
 	}
 }
 
 .data-budget--header {
-	@include span-columns(5);
-	@include omega;
-	font-size: $budget-header-size;
+	padding: 0 1em;
+	font-size: $budget-header-size * 0.75;
 	font-family: $header-font-family;
-	position: relative;
-	top: $budget-header-size;
 	margin: 0;
-	text-align: right;
+	text-align: center;
+
+	@include susy-breakpoint($medium-screen, 12) {
+		@include span(last 5 of 12);
+		position: relative;
+		top: $budget-header-size;
+		font-size: $budget-header-size;
+		text-align: right;
+	}
 
 	strong {
 		color: $blue;

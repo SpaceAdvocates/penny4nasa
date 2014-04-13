@@ -12,7 +12,6 @@
 // ------------------------------------------------------------------------------
 @import "compass/css3";
 @import "compass/reset";
-@import "susy";
 
 // Vendor Libraries
 // ------------------------------------------------------------------------------
@@ -20,6 +19,8 @@
 @import "../bower_components/font-awesome/scss/path";
 @import "../bower_components/font-awesome/scss/core";
 @import "../bower_components/font-awesome/scss/list";
+@import "../bower_components/susy/sass/susy";
+@import "breakpoint";
 
 // Web fonts
 // ------------------------------------------------------------------------------

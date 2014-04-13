@@ -10,7 +10,6 @@
 get_header(); ?>
 
 <div class="container">
-	<?php get_sidebar(); ?>
 	<div class="content">
 		<h1 class="page-header">
 			<?php the_title(); ?>
@@ -62,5 +61,6 @@ get_header(); ?>
 			endwhile;
 		?>
 	</div>
+	<?php get_sidebar(); ?>
 <?php
 get_footer();

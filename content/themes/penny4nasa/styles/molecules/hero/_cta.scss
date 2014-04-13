@@ -6,24 +6,30 @@ $social-links: facebook, twitter, google-plus, youtube;
 	padding: $grid-padding * 3;
 
 	.hero-content {
-		@include span-columns(8);
-		@include isolate(3);
+		@include container;
+		@include span(last 12);
 		font-size: 1.2em;
 		line-height: 1;
 		text-align: center;
 		clear: both;
 		color: $white;
+
+		@include susy-breakpoint($large-screen, 12) {
+			@include span(isolate 6 at 4 of 12);
+		}
 	}
 	.social-links {
-		@include span-columns(5);
-		@include pre(1);
+		@include span(last 12);
+
+		@include susy-breakpoint($medium-screen, 12) {
+			@include span(last 3 of 6);
+		}
 	}
 }
 
 .hero-cta--header {
 	font-size: 2.5em;
 	text-transform: uppercase;
-	white-space: nowrap;
 }
 
 .hero-cta--subheader {
@@ -32,6 +38,10 @@ $social-links: facebook, twitter, google-plus, youtube;
 }
 
 .hero-cta--link {
-	@include span-columns(4);
-	@include pre(1);
+	@include span(last 12);
+	margin-bottom: 1em;
+
+	@include susy-breakpoint($medium-screen, 12) {
+		@include span(3 of 6);
+	}
 }
