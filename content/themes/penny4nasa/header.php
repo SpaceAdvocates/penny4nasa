@@ -41,7 +41,7 @@
 								<a href="/press">Press Room</a>
 							</li>
 							<li class="nav-menu--item">
-								<a href="//www.youtube.com/channel/UCHWBRuQtDWvYqPdaGzkGjLA">Videos</a>
+								<a href="//www.cafepress.com/spaceadvocates">Store</a>
 							</li>
 							<li class="nav-menu--item">
 								<a href="/donate">Donate</a>
