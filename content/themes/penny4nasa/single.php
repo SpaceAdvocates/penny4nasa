@@ -21,6 +21,8 @@ get_header(); ?>
 				 */
 				get_template_part( 'content', get_post_format() );
 
+				get_sidebar();
+
 				// If comments are open or we have at least one comment, load up the comment template.
 				if ( comments_open() || get_comments_number() ) { ?>
 					<div class="post-comments">
@@ -28,8 +30,6 @@ get_header(); ?>
 					</div>
 				<?php }
 			endwhile;
-
-			get_sidebar();
 		?>
 	</div>
 

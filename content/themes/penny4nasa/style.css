@@ -107,7 +107,14 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   left: -1.85714em;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joseph\/Development\/penny4nasa\/content\/themes\/penny4nasa\/styles\/scaffolding\/_base\.scss}line{font-family:\000031}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joseph\/Development\/penny4nasa\/content\/themes\/penny4nasa\/bower_components\/susy\/sass\/susy\/language\/susy\/_box-sizing\.scss}line{font-family:\0000311}}
+*, *::before, *::after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joseph\/Development\/penny4nasa\/content\/themes\/penny4nasa\/styles\/scaffolding\/_base\.scss}line{font-family:\000033}}
 body {
   font-size: 12.8px;
   line-height: 1;
@@ -116,20 +123,20 @@ body {
   color: #f7f7f7;
 }
 @media (min-width: 48em) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joseph\/Development\/penny4nasa\/content\/themes\/penny4nasa\/styles\/scaffolding\/_base\.scss}line{font-family:\000031}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joseph\/Development\/penny4nasa\/content\/themes\/penny4nasa\/styles\/scaffolding\/_base\.scss}line{font-family:\000033}}
   body {
     font-size: 16px;
   }
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joseph\/Development\/penny4nasa\/content\/themes\/penny4nasa\/styles\/scaffolding\/_base\.scss}line{font-family:\0000313}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joseph\/Development\/penny4nasa\/content\/themes\/penny4nasa\/styles\/scaffolding\/_base\.scss}line{font-family:\0000315}}
 .wrapper {
   background: url(/content/themes/penny4nasa/images/stars.svg), -webkit-linear-gradient(top, #0d344d, #111111);
   background: url(/content/themes/penny4nasa/images/stars.svg), -moz-linear-gradient(top, #0d344d, #111111);
   background: url(/content/themes/penny4nasa/images/stars.svg), linear-gradient(top, #0d344d, #111111);
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joseph\/Development\/penny4nasa\/content\/themes\/penny4nasa\/styles\/scaffolding\/_base\.scss}line{font-family:\0000320}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joseph\/Development\/penny4nasa\/content\/themes\/penny4nasa\/styles\/scaffolding\/_base\.scss}line{font-family:\0000322}}
 .container {
   max-width: 80em;
   margin-left: auto;
