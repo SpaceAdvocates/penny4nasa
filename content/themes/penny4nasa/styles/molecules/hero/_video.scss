@@ -4,13 +4,27 @@
 	.video {
 		@include center-columns(10);
 		position: relative;
-		background: $black url(http://b.vimeocdn.com/ts/457/179/457179811_1280.jpg) no-repeat center;
-		background-size: 100%;
 
 		&:before {
 			content: "";
 			display: block;
 			padding-top: $hero-video-aspect-ratio;
+		}
+
+		iframe {
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			width: 100%;
+			height: 100%;
+
+			&:before {
+			content: "";
+			display: block;
+			padding-top: $hero-video-aspect-ratio;
+		}
 		}
 	}
 }

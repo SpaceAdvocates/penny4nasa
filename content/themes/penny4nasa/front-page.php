@@ -2,7 +2,9 @@
 
 <div class="hero-video">
 	<div class="container">
-		<div class="video"></div>
+		<div class="video">
+			<iframe src="//www.youtube.com/embed/moa-ies4bPw?rel=0" frameborder="0" allowfullscreen></iframe>
+		</div>
 	</div>
 </div>
 
