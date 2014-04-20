@@ -11,7 +11,7 @@
 								<a href="/about">About</a>
 							</li>
 							<li class="footer-link">
-								<a href="/faq">FAQ</a>
+								<a href="/partners">Partners</a>
 							</li>
 							<li class="footer-link">
 								<a href="mailto:admin@penny4nasa.org">Contact</a>
@@ -47,7 +47,7 @@
 							<a href="//plus.google.com/104209973472169534234/posts"></a>
 						</li>
 						<li class="social-link youtube">
-							<a href="//www.youtube.com/playlist?list=PLC9B5D1A15F66C1A9"></a>
+							<a href="//www.youtube.com/Penny4NASA"></a>
 						</li>
 						<li class="social-link github">
 							<a href="//github.com/SpaceAdvocates/penny4nasa"></a>
