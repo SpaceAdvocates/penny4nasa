@@ -323,13 +323,12 @@ h6 {
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joseph\/Development\/penny4nasa\/content\/themes\/penny4nasa\/styles\/quarks\/_images\.scss}line{font-family:\000031}}
 .alignright, .alignleft, .alignnone {
-  margin-bottom: 1em;
   max-width: 100%;
   height: auto;
 }
 
 @media (min-width: 48em) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joseph\/Development\/penny4nasa\/content\/themes\/penny4nasa\/styles\/quarks\/_images\.scss}line{font-family:\000039}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joseph\/Development\/penny4nasa\/content\/themes\/penny4nasa\/styles\/quarks\/_images\.scss}line{font-family:\000038}}
   .alignright {
     float: right;
     margin-left: 1em;
@@ -337,7 +336,7 @@ h6 {
 }
 
 @media (min-width: 48em) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joseph\/Development\/penny4nasa\/content\/themes\/penny4nasa\/styles\/quarks\/_images\.scss}line{font-family:\0000318}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joseph\/Development\/penny4nasa\/content\/themes\/penny4nasa\/styles\/quarks\/_images\.scss}line{font-family:\0000317}}
   .alignleft {
     float: left;
     margin-right: 1em;
@@ -345,7 +344,7 @@ h6 {
 }
 
 @media (min-width: 48em) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joseph\/Development\/penny4nasa\/content\/themes\/penny4nasa\/styles\/quarks\/_images\.scss}line{font-family:\0000327}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joseph\/Development\/penny4nasa\/content\/themes\/penny4nasa\/styles\/quarks\/_images\.scss}line{font-family:\0000326}}
   .alignnone {
     margin-left: auto;
     margin-right: auto;
