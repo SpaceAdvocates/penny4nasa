@@ -32,12 +32,10 @@ content/backups/
 content/blogs.dir/
 content/cache/
 content/index.php
-content/plugins/
 content/themes/index.php
 content/uploads/
 content/upgrade/
 content/wp-cache-config.php
-#content/themes/penny4nasa/style.css
 
 # Editor files
 *.sublime*
