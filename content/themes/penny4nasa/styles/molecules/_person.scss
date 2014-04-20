@@ -1,0 +1,31 @@
+.person {
+	padding: 2em 1em 1em 1em;
+	text-align: center;
+	margin-bottom: 2em;
+	@include heavy-opacity($black);
+
+	&:hover .photo {
+		// @include greyscale(false);
+	}
+
+	.photo {
+		@include border-radius;
+		// @include greyscale(true);
+		margin-bottom: 0.5em;
+		// @include single-transition(all 1s linear);
+		width: 80%;
+		height: auto;
+	}
+	.name {
+		font-size: 1.3em;
+		@include ellipsis;
+
+		a {
+			color: $blue;
+		}
+	}
+	.position {
+		font-size: 0.9em;
+		@include ellipsis;
+	}
+}

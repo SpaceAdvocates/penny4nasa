@@ -35,6 +35,9 @@
 								<a href="/mission">The Mission</a>
 							</li>
 							<li class="nav-menu--item">
+								<a href="/about">About</a>
+							</li>
+							<li class="nav-menu--item">
 								<a href="/blog">Blog</a>
 							</li>
 							<li class="nav-menu--item">

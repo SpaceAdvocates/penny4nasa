@@ -1,0 +1,34 @@
+.page-about {
+	.site-main {
+		h1 {
+			text-align: center;
+			font-size: 2em;
+			margin-bottom: 0.5em;
+
+			@include susy-breakpoint($medium-screen, 12) {
+				font-size: 4em;
+			}
+		}
+		h2 {
+			clear: both;
+		}
+		.content {
+			@include span(last 12);
+			margin-bottom: 2em;
+
+			@include susy-breakpoint($medium-screen, 12) {
+				@include span(isolate 8 at 3);
+			}
+		}
+		.section-title {
+			clear: both;
+		}
+		.person {
+			@include gallery(6, nth-of-type);
+
+			@include susy-breakpoint($medium-screen, 12) {
+				@include gallery(3, nth-of-type);
+			}
+		}
+	}
+}

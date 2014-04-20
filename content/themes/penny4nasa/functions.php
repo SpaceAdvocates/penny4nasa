@@ -522,3 +522,54 @@ require get_template_directory() . '/inc/customizer.php';
 if ( ! class_exists( 'Featured_Content' ) && 'plugins.php' !== $GLOBALS['pagenow'] ) {
 	require get_template_directory() . '/inc/featured-content.php';
 }
+
+add_action( 'show_user_profile', 'my_show_extra_profile_fields' );
+add_action( 'edit_user_profile', 'my_show_extra_profile_fields' );
+function my_show_extra_profile_fields( $user ) { ?>
+
+	<h3>Position Information</h3>
+
+	<table class="form-table">
+		<tr>
+			<th><label for="position">Poisition</label></th>
+			<td>
+				<input type="text" name="position" id="position" value="<?php echo esc_attr( get_the_author_meta( 'position', $user->ID ) ); ?>" class="regular-text" /><br />
+				<span class="description">Please enter your position title.</span>
+			</td>
+		</tr>
+		<tr>
+			<th>Rank<br><span class="description">Choose which best describes you.</span></th>
+			<td>
+				<?php
+					$author_rank = esc_attr( get_the_author_meta( 'rank', $user->ID ) );
+					do_action( 'show_ranks', true );
+				?>
+			</td>
+		</tr>
+	</table>
+<?php }
+
+add_action ( 'show_ranks', 'rank_checkboxes' );
+function rank_checkboxes( $shouldAddBreak = false ) {
+	$ranks = array('director','social_media','graphic_design','web_development','government_relations', 'video_development', 'public_and_media_relations');
+
+	foreach($ranks as $rank): ?>
+		<label for="rank_<?php echo $rank; ?>">
+			<input type="radio" name="rank" id="rank_<?php echo $rank; ?>" value="<?php echo $rank; ?>" <?php if($author_rank === $rank): ?> checked="checked"<?php endif; ?> />
+			<?php echo ucwords(str_replace('_',' ',$rank)); ?>
+		</label>
+		<?php if($shouldAddBreak): ?><br /><?php endif; ?>
+	<?php endforeach;
+}
+
+add_action( 'personal_options_update', 'my_save_extra_profile_fields' );
+add_action( 'edit_user_profile_update', 'my_save_extra_profile_fields' );
+function my_save_extra_profile_fields( $user_id ) {
+
+	if ( !current_user_can( 'edit_user', $user_id ) ) {
+		return false;
+	}
+
+	update_usermeta( $user_id, 'rank', $_POST['rank'] );
+	update_usermeta( $user_id, 'position', $_POST['position'] );
+}
