@@ -19,6 +19,7 @@ $facebook-color: #3b5998;
 $twitter-color: #55acee;
 $google-plus-color: #dd4b39;
 $youtube-color: #bb0000;
+$github-color: #000000;
 
 $primary-color: $dark-grey;
 $secondary-color: $grey;
@@ -123,5 +124,8 @@ $social-media-list: (
 	),
 	youtube: (
 		color: $youtube-color
+	),
+	github: (
+		color: $github-color
 	)
 )

@@ -49,6 +49,9 @@
 						<li class="social-link youtube">
 							<a href="//www.youtube.com/playlist?list=PLC9B5D1A15F66C1A9"></a>
 						</li>
+						<li class="social-link github">
+							<a href="//github.com/SpaceAdvocates/penny4nasa"></a>
+						</li>
 					</ul>
 					<p class="copyright">&copy; 2014 Space Advocates. All rights reserved.</p>
 				</div>
@@ -81,7 +84,7 @@
 						x = d3.time.scale().range([0, width]),
 						y = d3.scale.linear().range([height, 0]);
 
-					svg = svg.append('g')
+					svg = svg.attr("width", window.innerWidth).attr("height",window.innerHeight).append('g')
 						.attr('class', 'graph');
 
 					var xAxis = d3.svg.axis().scale(x).orient('bottom'),
