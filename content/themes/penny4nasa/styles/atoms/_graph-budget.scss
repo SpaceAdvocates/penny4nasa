@@ -3,7 +3,7 @@ $graph-budget-small-height: 20em;
 $graph-budget-margin-left: 3em;
 $graph-budget-margin-top: 1em;
 
-.graph-budget {
+.graph-budget, .graph-budget-image {
 	font-size: 1em;
 	height: $graph-budget-small-height;
 	fill: $white;
@@ -17,8 +17,18 @@ $graph-budget-margin-top: 1em;
 	}
 	.axis {
 		&.x {
-			@include transform(translate(0, $graph-budget-height - 3));
+			@include transform(translate(0, $graph-budget-height / 2));
 
+			@include susy-breakpoint($medium-screen, 12) {
+				@include transform(translate(0, $graph-budget-height - 3));
+			}
+
+			.tick text {
+				@include susy-breakpoint(0 $small-screen, 12) {
+					@include transform(rotate(-45deg));
+					text-anchor: end !important;
+				}
+			}
 			path {
 				display: none;
 			}
@@ -31,8 +41,13 @@ $graph-budget-margin-top: 1em;
 	}
 	.label {
 		&.y {
+			display: none;
 			@include transform(rotate(-90deg));
 			text-anchor: end;
+
+			@include susy-breakpoint($medium-screen, 12) {
+				display: block;
+			}
 		}
 	}
 	.line {

@@ -4,7 +4,9 @@ $budget-header-small-size: 0.5em;
 .data-budget {
 	@extend %hero;
 
-	.graph-budget {
+	.graph-budget, .graph-budget-image {
+		width: 100%;
+
 		@include susy-breakpoint($medium-screen, 12) {
 			margin-top: ($budget-header-size * 3) * -1;
 		}
