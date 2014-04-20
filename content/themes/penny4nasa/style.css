@@ -322,7 +322,7 @@ h6 {
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joseph\/Development\/penny4nasa\/content\/themes\/penny4nasa\/styles\/quarks\/_images\.scss}line{font-family:\000031}}
-.alignright, .alignleft, .alignnone {
+.alignright, .alignleft, .alignnone, .aligncenter {
   max-width: 100%;
   height: auto;
 }
@@ -345,7 +345,7 @@ h6 {
 
 @media (min-width: 48em) {
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joseph\/Development\/penny4nasa\/content\/themes\/penny4nasa\/styles\/quarks\/_images\.scss}line{font-family:\0000326}}
-  .alignnone {
+  .alignnone, .aligncenter {
     margin-left: auto;
     margin-right: auto;
   }
@@ -577,34 +577,22 @@ strong {
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joseph\/Development\/penny4nasa\/content\/themes\/penny4nasa\/styles\/molecules\/_donate-method\.scss}line{font-family:\000031}}
   .donate-method {
     width: 49.15254%;
-    float: left;
-    margin-right: 1.69492%;
-  }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joseph\/Development\/penny4nasa\/content\/themes\/penny4nasa\/styles\/molecules\/_donate-method\.scss}line{font-family:\000037}}
-  .donate-method:last-of-type {
     float: right;
-    margin-right: 0;
   }
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joseph\/Development\/penny4nasa\/content\/themes\/penny4nasa\/styles\/molecules\/_donate-method\.scss}line{font-family:\0000312}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joseph\/Development\/penny4nasa\/content\/themes\/penny4nasa\/styles\/molecules\/_donate-method\.scss}line{font-family:\000038}}
 .donate-method .paypal-method {
   font-size: 0.8em;
   text-align: center;
 }
 @media (min-width: 48em) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joseph\/Development\/penny4nasa\/content\/themes\/penny4nasa\/styles\/molecules\/_donate-method\.scss}line{font-family:\0000312}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joseph\/Development\/penny4nasa\/content\/themes\/penny4nasa\/styles\/molecules\/_donate-method\.scss}line{font-family:\000038}}
   .donate-method .paypal-method {
     width: 49.15254%;
-    float: left;
-    margin-right: 1.69492%;
-  }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joseph\/Development\/penny4nasa\/content\/themes\/penny4nasa\/styles\/molecules\/_donate-method\.scss}line{font-family:\0000319}}
-  .donate-method .paypal-method:last-of-type {
     float: right;
-    margin-right: 0;
   }
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joseph\/Development\/penny4nasa\/content\/themes\/penny4nasa\/styles\/molecules\/_donate-method\.scss}line{font-family:\0000324}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joseph\/Development\/penny4nasa\/content\/themes\/penny4nasa\/styles\/molecules\/_donate-method\.scss}line{font-family:\0000316}}
 .donate-method .address--mail {
   padding: 1rem;
   font-family: "PT Sans", Helvetica, Arial, sans-serif;

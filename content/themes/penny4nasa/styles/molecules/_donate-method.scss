@@ -2,11 +2,7 @@
 	padding: $grid-padding $grid-padding 0;
 
 	@include susy-breakpoint($medium-screen, 12) {
-		@include span(6);
-
-		&:last-of-type {
-			@include last;
-		}
+		@include span(last 6);
 	}
 
 	.paypal-method {
@@ -14,19 +10,11 @@
 		text-align: center;
 
 		@include susy-breakpoint($medium-screen, 12) {
-			@include span(6);
-
-			&:last-of-type {
-				@include last;
-			}
+			@include span(last 6);
 		}
 	}
 	.address--mail {
 		padding: $grid-padding;
 		font-family: $special-font-family;
 	}
-}
-
-.donate-method--title {
-
 }

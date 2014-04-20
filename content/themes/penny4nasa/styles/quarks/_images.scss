@@ -23,7 +23,7 @@ img {}
 	}
 }
 
-.alignnone {
+.alignnone, .aligncenter {
 	@extend %images;
 
 	@include susy-breakpoint($medium-screen, 12) {
