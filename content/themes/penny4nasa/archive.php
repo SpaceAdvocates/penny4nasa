@@ -16,61 +16,54 @@
  * @subpackage Twenty_Fourteen
  * @since Twenty Fourteen 1.0
  */
+?>
 
-get_header(); ?>
+<?php get_header(); ?>
 
-	<div class="feed">
-		<div class="container">
+	<div class="container">
+		<header class="page-header">
+			<h1 class="page-title">
+				<?php
+					if ( is_day() ) :
+						printf( __( 'Daily Archives: %s', 'twentyfourteen' ), get_the_date() );
 
-			<?php if ( have_posts() ) : ?>
+					elseif ( is_month() ) :
+						printf( __( 'Monthly Archives: %s', 'twentyfourteen' ), get_the_date( _x( 'F Y', 'monthly archives date format', 'twentyfourteen' ) ) );
 
-			<header class="page-header">
-				<h1 class="page-title">
-					<?php
-						if ( is_day() ) :
-							printf( __( 'Daily Archives: %s', 'twentyfourteen' ), get_the_date() );
+					elseif ( is_year() ) :
+						printf( __( 'Yearly Archives: %s', 'twentyfourteen' ), get_the_date( _x( 'Y', 'yearly archives date format', 'twentyfourteen' ) ) );
 
-						elseif ( is_month() ) :
-							printf( __( 'Monthly Archives: %s', 'twentyfourteen' ), get_the_date( _x( 'F Y', 'monthly archives date format', 'twentyfourteen' ) ) );
+					else :
+						_e( 'Archives', 'twentyfourteen' );
 
-						elseif ( is_year() ) :
-							printf( __( 'Yearly Archives: %s', 'twentyfourteen' ), get_the_date( _x( 'Y', 'yearly archives date format', 'twentyfourteen' ) ) );
+					endif;
+				?>
+			</h1>
+		</header><!-- .page-header -->
+		<div class="posts">
+		<?php
+			if ( have_posts() ) :
+				// Start the Loop.
+				while ( have_posts() ) : the_post();
 
-						else :
-							_e( 'Archives', 'twentyfourteen' );
+					/*
+					 * Include the post format-specific template for the content. If you want to
+					 * use this in a child theme, then include a file called called content-___.php
+					 * (where ___ is the post format) and that will be used instead.
+					 */
+					get_template_part( 'content', get_post_format() );
 
-						endif;
-					?>
-				</h1>
-			</header><!-- .page-header -->
+				endwhile;
 
-			<?php
-					get_sidebar();
+			else :
+				// If no content, include the "No posts found" template.
+				get_template_part( 'content', 'none' );
 
-					// Start the Loop.
-					while ( have_posts() ) : the_post();
+			endif;
+		?>
+		</div>
+		<?php get_sidebar(); ?>
+	</div>
 
-						/*
-						 * Include the post format-specific template for the content. If you want to
-						 * use this in a child theme, then include a file called called content-___.php
-						 * (where ___ is the post format) and that will be used instead.
-						 */
-						get_template_part( 'content', get_post_format() );
+<?php get_footer(); ?>
 
-					endwhile;
-					// Previous/next page navigation.
-					twentyfourteen_paging_nav();
-
-				else :
-					get_sidebar();
-
-					// If no content, include the "No posts found" template.
-					get_template_part( 'content', 'none' );
-
-				endif;
-			?>
-		</div><!-- .container -->
-	</div><!-- .feed -->
-
-<?php
-get_footer();
