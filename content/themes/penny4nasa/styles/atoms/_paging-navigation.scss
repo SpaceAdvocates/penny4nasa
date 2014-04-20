@@ -1,0 +1,13 @@
+.paging-navigation {
+	text-align: right;
+	font-size: 1.5em;
+	@include heavy-opacity($black);
+	padding: 0.5em;
+
+	.screen-reader-text {
+		display: none;
+	}
+	a {
+		text-decoration: none;
+	}
+}

@@ -502,6 +502,22 @@ strong {
   stroke-width: 1.5px;
 }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joseph\/Development\/penny4nasa\/content\/themes\/penny4nasa\/styles\/atoms\/_paging-navigation\.scss}line{font-family:\000031}}
+.paging-navigation {
+  text-align: right;
+  font-size: 1.5em;
+  background-color: rgba(17, 17, 17, 0.8);
+  padding: 0.5em;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joseph\/Development\/penny4nasa\/content\/themes\/penny4nasa\/styles\/atoms\/_paging-navigation\.scss}line{font-family:\000037}}
+.paging-navigation .screen-reader-text {
+  display: none;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joseph\/Development\/penny4nasa\/content\/themes\/penny4nasa\/styles\/atoms\/_paging-navigation\.scss}line{font-family:\0000310}}
+.paging-navigation a {
+  text-decoration: none;
+}
+
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joseph\/Development\/penny4nasa\/content\/themes\/penny4nasa\/styles\/atoms\/_search\.scss}line{font-family:\000032}}
 .search-form .screen-reader-text {
   display: none;
