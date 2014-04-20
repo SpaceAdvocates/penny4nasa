@@ -321,21 +321,35 @@ h6 {
   font-size: 1.2em;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joseph\/Development\/penny4nasa\/content\/themes\/penny4nasa\/styles\/quarks\/_images\.scss}line{font-family:\000033}}
-.alignright {
-  float: right;
-  margin-right: 0;
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joseph\/Development\/penny4nasa\/content\/themes\/penny4nasa\/styles\/quarks\/_images\.scss}line{font-family:\000031}}
+.alignright, .alignleft, .alignnone {
+  margin-bottom: 1em;
+  max-width: 100%;
+  height: auto;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joseph\/Development\/penny4nasa\/content\/themes\/penny4nasa\/styles\/quarks\/_images\.scss}line{font-family:\000038}}
-.alignleft {
-  float: left;
+@media (min-width: 48em) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joseph\/Development\/penny4nasa\/content\/themes\/penny4nasa\/styles\/quarks\/_images\.scss}line{font-family:\000039}}
+  .alignright {
+    float: right;
+    margin-left: 1em;
+  }
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joseph\/Development\/penny4nasa\/content\/themes\/penny4nasa\/styles\/quarks\/_images\.scss}line{font-family:\0000312}}
-.alignnone {
-  margin-left: auto;
-  margin-right: auto;
+@media (min-width: 48em) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joseph\/Development\/penny4nasa\/content\/themes\/penny4nasa\/styles\/quarks\/_images\.scss}line{font-family:\0000318}}
+  .alignleft {
+    float: left;
+    margin-right: 1em;
+  }
+}
+
+@media (min-width: 48em) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joseph\/Development\/penny4nasa\/content\/themes\/penny4nasa\/styles\/quarks\/_images\.scss}line{font-family:\0000327}}
+  .alignnone {
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joseph\/Development\/penny4nasa\/content\/themes\/penny4nasa\/styles\/quarks\/_links\.scss}line{font-family:\000031}}
@@ -811,35 +825,17 @@ strong {
   width: 1em;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joseph\/Development\/penny4nasa\/content\/themes\/penny4nasa\/styles\/molecules\/_wp-caption\.scss}line{font-family:\000031}}
-.wp-caption {
-  margin: 1em;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joseph\/Development\/penny4nasa\/content\/themes\/penny4nasa\/styles\/molecules\/_wp-caption\.scss}line{font-family:\000034}}
-.wp-caption.alignright {
-  float: right;
-  margin-right: 0;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joseph\/Development\/penny4nasa\/content\/themes\/penny4nasa\/styles\/molecules\/_wp-caption\.scss}line{font-family:\000038}}
-.wp-caption.alignleft {
-  float: left;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joseph\/Development\/penny4nasa\/content\/themes\/penny4nasa\/styles\/molecules\/_wp-caption\.scss}line{font-family:\0000311}}
-.wp-caption.alignnone {
-  margin-left: auto;
-  margin-right: auto;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joseph\/Development\/penny4nasa\/content\/themes\/penny4nasa\/styles\/molecules\/_wp-caption\.scss}line{font-family:\0000315}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joseph\/Development\/penny4nasa\/content\/themes\/penny4nasa\/styles\/molecules\/_wp-caption\.scss}line{font-family:\000032}}
 .wp-caption > a {
   display: block;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joseph\/Development\/penny4nasa\/content\/themes\/penny4nasa\/styles\/molecules\/_wp-caption\.scss}line{font-family:\0000318}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joseph\/Development\/penny4nasa\/content\/themes\/penny4nasa\/styles\/molecules\/_wp-caption\.scss}line{font-family:\000035}}
 .wp-caption img {
   width: 100%;
   height: auto;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joseph\/Development\/penny4nasa\/content\/themes\/penny4nasa\/styles\/molecules\/_wp-caption\.scss}line{font-family:\0000324}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joseph\/Development\/penny4nasa\/content\/themes\/penny4nasa\/styles\/molecules\/_wp-caption\.scss}line{font-family:\0000311}}
 .wp-caption-text {
   font-size: 0.8em;
   padding: 0.5em;

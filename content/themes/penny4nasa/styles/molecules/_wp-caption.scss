@@ -1,17 +1,4 @@
 .wp-caption {
-	margin: 1em;
-
-	&.alignright {
-		float: right;
-		margin-right: 0;
-	}
-	&.alignleft {
-		float: left;
-	}
-	&.alignnone {
-		margin-left: auto;
-		margin-right: auto;
-	}
 	& > a {
 		display: block;
 	}

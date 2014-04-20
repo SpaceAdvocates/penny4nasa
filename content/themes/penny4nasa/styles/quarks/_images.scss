@@ -1,15 +1,34 @@
+%images {
+	margin-bottom: 1em;
+	max-width: 100%;
+	height: auto;
+}
+
 img {}
 
 .alignright {
-	float: right;
-	margin-right: 0;
+	@extend %images;
+
+	@include susy-breakpoint($medium-screen, 12) {
+		float: right;
+		margin-left: 1em;
+	}
 }
 
 .alignleft {
-	float: left;
+	@extend %images;
+
+	@include susy-breakpoint($medium-screen, 12) {
+		float: left;
+		margin-right: 1em;
+	}
 }
 
 .alignnone {
-	margin-left: auto;
-	margin-right: auto;
+	@extend %images;
+
+	@include susy-breakpoint($medium-screen, 12) {
+		margin-left: auto;
+		margin-right: auto;
+	}
 }
