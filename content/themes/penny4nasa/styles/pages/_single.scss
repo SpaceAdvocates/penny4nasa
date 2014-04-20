@@ -8,6 +8,8 @@ body.single {
 		text-align: center;
 		padding: $grid-padding;
 		@include light-opacity($blue);
+		display: flex;
+		align-items: center;
 
 		img {
 			max-width: 100%;

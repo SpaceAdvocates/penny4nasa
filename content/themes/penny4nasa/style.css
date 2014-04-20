@@ -1547,25 +1547,27 @@ body.single .post-thumbnail {
   text-align: center;
   padding: 1rem;
   background-color: rgba(30, 148, 222, 0.2);
+  display: flex;
+  align-items: center;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joseph\/Development\/penny4nasa\/content\/themes\/penny4nasa\/styles\/pages\/_single\.scss}line{font-family:\0000312}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joseph\/Development\/penny4nasa\/content\/themes\/penny4nasa\/styles\/pages\/_single\.scss}line{font-family:\0000314}}
 body.single .post-thumbnail img {
   max-width: 100%;
   height: auto;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joseph\/Development\/penny4nasa\/content\/themes\/penny4nasa\/styles\/pages\/_single\.scss}line{font-family:\0000317}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joseph\/Development\/penny4nasa\/content\/themes\/penny4nasa\/styles\/pages\/_single\.scss}line{font-family:\0000319}}
 body.single .entry-header {
   padding: 1rem 1rem 0;
   background-color: rgba(17, 17, 17, 0.8);
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joseph\/Development\/penny4nasa\/content\/themes\/penny4nasa\/styles\/pages\/_single\.scss}line{font-family:\0000321}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joseph\/Development\/penny4nasa\/content\/themes\/penny4nasa\/styles\/pages\/_single\.scss}line{font-family:\0000323}}
 body.single .entry-content {
   padding: 1rem 1rem 0;
   background-color: rgba(17, 17, 17, 0.8);
   overflow: hidden;
   margin-bottom: 1em;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joseph\/Development\/penny4nasa\/content\/themes\/penny4nasa\/styles\/pages\/_single\.scss}line{font-family:\0000327}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joseph\/Development\/penny4nasa\/content\/themes\/penny4nasa\/styles\/pages\/_single\.scss}line{font-family:\0000329}}
 body.single .entry-content ul {
   padding: 1em 1em 0.5em 2em;
   list-style-type: disc;
@@ -1573,35 +1575,35 @@ body.single .entry-content ul {
   margin-bottom: 1em;
   overflow: hidden;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joseph\/Development\/penny4nasa\/content\/themes\/penny4nasa\/styles\/pages\/_single\.scss}line{font-family:\0000334}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joseph\/Development\/penny4nasa\/content\/themes\/penny4nasa\/styles\/pages\/_single\.scss}line{font-family:\0000336}}
 body.single .entry-content ul li {
   margin-bottom: 0.5em;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joseph\/Development\/penny4nasa\/content\/themes\/penny4nasa\/styles\/pages\/_single\.scss}line{font-family:\0000339}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joseph\/Development\/penny4nasa\/content\/themes\/penny4nasa\/styles\/pages\/_single\.scss}line{font-family:\0000341}}
 body.single .entry-meta {
   font-size: 0.8em;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joseph\/Development\/penny4nasa\/content\/themes\/penny4nasa\/styles\/pages\/_single\.scss}line{font-family:\0000343}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joseph\/Development\/penny4nasa\/content\/themes\/penny4nasa\/styles\/pages\/_single\.scss}line{font-family:\0000345}}
 body.single .entry-meta > .entry-date:before {
   content: "Posted on ";
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joseph\/Development\/penny4nasa\/content\/themes\/penny4nasa\/styles\/pages\/_single\.scss}line{font-family:\0000348}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joseph\/Development\/penny4nasa\/content\/themes\/penny4nasa\/styles\/pages\/_single\.scss}line{font-family:\0000350}}
 body.single .entry-meta .author:before {
   content: "by ";
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joseph\/Development\/penny4nasa\/content\/themes\/penny4nasa\/styles\/pages\/_single\.scss}line{font-family:\0000353}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joseph\/Development\/penny4nasa\/content\/themes\/penny4nasa\/styles\/pages\/_single\.scss}line{font-family:\0000355}}
 body.single .post-comments {
   padding: 1rem;
 }
 @media (min-width: 48em) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joseph\/Development\/penny4nasa\/content\/themes\/penny4nasa\/styles\/pages\/_single\.scss}line{font-family:\0000353}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joseph\/Development\/penny4nasa\/content\/themes\/penny4nasa\/styles\/pages\/_single\.scss}line{font-family:\0000355}}
   body.single .post-comments {
     width: 74.57627%;
     float: left;
     margin-right: 1.69492%;
   }
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joseph\/Development\/penny4nasa\/content\/themes\/penny4nasa\/styles\/pages\/_single\.scss}line{font-family:\0000361}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joseph\/Development\/penny4nasa\/content\/themes\/penny4nasa\/styles\/pages\/_single\.scss}line{font-family:\0000363}}
 body.single .tag-links a {
   color: inherit;
   text-decoration: none;
