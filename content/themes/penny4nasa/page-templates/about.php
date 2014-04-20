@@ -59,7 +59,7 @@ Template Name: About Page
 						<?php endif; ?>
 					</h4>
 					<h5 class="position"><?= $person['position']; ?></h5>
-					<div class="bio"><?= $person['bio']; ?></div>
+					<!-- <div class="bio"><?= $person['bio']; ?></div> -->
 				</div>
 			<?php endforeach; ?>
 		</section>
