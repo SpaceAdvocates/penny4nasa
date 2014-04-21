@@ -171,11 +171,6 @@ body {
   content: "\f0d5";
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joseph\/Development\/penny4nasa\/content\/themes\/penny4nasa\/styles\/utils\/_font-awesome\.scss}line{font-family:\000032}}
-.social-link.github a:before {
-  content: "\f09b";
-}
-
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joseph\/Development\/penny4nasa\/content\/themes\/penny4nasa\/styles\/utils\/_sticky-footer\.scss}line{font-family:\000033}}
 html, body {
   height: 100%;
@@ -194,7 +189,7 @@ html, body {
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joseph\/Development\/penny4nasa\/content\/themes\/penny4nasa\/styles\/quarks\/_buttons\.scss}line{font-family:\000032}}
-.button.-cta, .button, [type="submit"], .social-link.facebook a, .social-link.twitter a, .social-link.google-plus a, .social-link.youtube a, .social-link.github a {
+.button.-cta, .button, [type="submit"], .social-link.facebook a, .social-link.twitter a, .social-link.google-plus a, .social-link.youtube a {
   color: inherit;
   text-decoration: none;
   display: block;
@@ -206,7 +201,7 @@ html, body {
   cursor: pointer;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joseph\/Development\/penny4nasa\/content\/themes\/penny4nasa\/styles\/quarks\/__mixins\.scss}line{font-family:\000035}}
-.button:hover, [type="submit"]:hover, .social-link.facebook a:hover, .social-link.twitter a:hover, .social-link.google-plus a:hover, .social-link.youtube a:hover, .social-link.github a:hover {
+.button:hover, [type="submit"]:hover, .social-link.facebook a:hover, .social-link.twitter a:hover, .social-link.google-plus a:hover, .social-link.youtube a:hover {
   color: inherit;
   text-decoration: none;
 }
@@ -712,7 +707,7 @@ strong {
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joseph\/Development\/penny4nasa\/content\/themes\/penny4nasa\/styles\/molecules\/_social-links\.scss}line{font-family:\000035}}
-.social-link.facebook a, .social-link.twitter a, .social-link.google-plus a, .social-link.youtube a, .social-link.github a {
+.social-link.facebook a, .social-link.twitter a, .social-link.google-plus a, .social-link.youtube a {
   font-size: 1.5em;
   padding: 0.5em;
   display: inline-block;
@@ -725,7 +720,7 @@ strong {
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joseph\/Development\/penny4nasa\/content\/themes\/penny4nasa\/styles\/molecules\/_social-links\.scss}line{font-family:\0000318}}
 .social-link {
-  width: 20%;
+  width: 25%;
   float: right;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joseph\/Development\/penny4nasa\/content\/themes\/penny4nasa\/styles\/molecules\/_social-links\.scss}line{font-family:\0000342}}
@@ -799,24 +794,6 @@ strong {
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joseph\/Development\/penny4nasa\/content\/themes\/penny4nasa\/styles\/molecules\/_social-links\.scss}line{font-family:\0000347}}
 .social-link.youtube a:hover {
   background-color: #bb0000;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joseph\/Development\/penny4nasa\/content\/themes\/penny4nasa\/styles\/molecules\/_social-links\.scss}line{font-family:\0000342}}
-.social-link.github a {
-  background-color: rgba(0, 0, 0, 0.8);
-  color: #f7f7f7;
-  -moz-transition: background-color 0.2s;
-  -o-transition: background-color 0.2s;
-  -webkit-transition: background-color 0.2s;
-  transition: background-color 0.2s;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joseph\/Development\/penny4nasa\/content\/themes\/penny4nasa\/styles\/quarks\/_buttons\.scss}line{font-family:\0000319}}
-.social-link.github a:hover {
-  background-color: black;
-  color: #f7f7f7;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joseph\/Development\/penny4nasa\/content\/themes\/penny4nasa\/styles\/molecules\/_social-links\.scss}line{font-family:\0000347}}
-.social-link.github a:hover {
-  background-color: black;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joseph\/Development\/penny4nasa\/content\/themes\/penny4nasa\/styles\/molecules\/_social-links\.scss}line{font-family:\0000353}}
 .social-link a {

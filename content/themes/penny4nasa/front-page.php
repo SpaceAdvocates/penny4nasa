@@ -33,9 +33,6 @@
 				<li class="social-link youtube">
 					<a href="//www.youtube.com/Penny4NASA"></a>
 				</li>
-				<li class="social-link github">
-					<a href="//github.com/SpaceAdvocates/penny4nasa"></a>
-				</li>
 			</ul>
 		</div>
 	</div>
