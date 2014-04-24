@@ -14,7 +14,7 @@
 								<a href="/partners">Partners</a>
 							</li>
 							<li class="footer-link">
-								<a href="mailto:admin@penny4nasa.org">Contact</a>
+								<a href="/contact">Contact</a>
 							</li>
 						</ul>
 					</div>
