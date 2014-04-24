@@ -2,6 +2,28 @@
 /*
 Template Name: About Page
 */
+	function sortPositions($a, $b) {
+		$positionA = esc_attr( get_the_author_meta( 'position', $a->ID ) );
+		$positionB = esc_attr( get_the_author_meta( 'position', $b->ID ) );
+
+		$priorities = array(
+			'Executive',
+			'Founder',
+			'Assistant Director',
+			'Senior',
+			'Lead Web',
+			'Lead'
+		);
+
+		// Check for priorities first
+		foreach($priorities as $priority) {
+			if(strpos($positionA, $priority) !== false) return -1;
+			if(strpos($positionB, $priority) !== false) return 1;
+		}
+
+		if ($positionA == $positionB) return 0;
+	    return ($positionA < $positionB) ? -1 : 1;
+	}
 
 	$ranks = $wpdb->get_col("SELECT meta_value FROM $wpdb->usermeta WHERE meta_key = 'rank' GROUP BY meta_value ORDER BY umeta_id" );
 	sort ( $ranks );
@@ -35,6 +57,7 @@ Template Name: About Page
 		}
 
 		$output[] = $sectionOutput;
+		unset($output[0]); // quick fix hack to remove a stubborn array bug - appropriate fix should be made
 	}
 ?>
 
@@ -42,7 +65,6 @@ Template Name: About Page
 
 <div class="container">
 	<?php while(have_posts()): the_post(); the_content(); endwhile; ?>
-
 	<h2>The Crew</h2>
 
 	<?php foreach( $output as $section ) : ?>
