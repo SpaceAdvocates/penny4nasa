@@ -18,23 +18,6 @@ $social-link-size: 0.5em;
 .social-link {
 	@include span(last (100% / length($social-media-list)));
 
-	// @each $media in $social-media-list {
-	// 	$service: getObjectKey($media);
-	// 	$service-properties: getObjectValue($media);
-	// 	$service-color: getObjectValue($service-properties);
-	//
-	// 	&.#{$service} {
-	// 		a {
-	// 			@extend %fa-#{$service};
-	// 			@extend %social-link;
-	// 			@include button($service-color);
-	//
-	// 			&:hover {
-	// 				background-color: $service-color;
-	// 			}
-	// 		}
-	// 	}
-	// }
 	@each $service, $properties in $social-media-list {
 		$service-color: map-get($properties, color);
 

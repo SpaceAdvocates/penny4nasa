@@ -50,7 +50,10 @@
 							<a href="//www.youtube.com/Penny4NASA"></a>
 						</li>
 					</ul>
-					<p class="copyright">&copy; 2014 Space Advocates. All rights reserved.</p>
+					<p class="copyright">
+						&copy; 2014 Space Advocates. All rights reserved.
+						<a class="contribute" href="https://github.com/SpaceAdvocates">Contribute to Space Advocates Engineering!</a>
+					</p>
 				</div>
 			</div>
 		</footer>

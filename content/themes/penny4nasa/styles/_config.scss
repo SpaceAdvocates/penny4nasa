@@ -44,7 +44,7 @@ $default-border-radius: 1px;
 
 /////// Page dimension configuration ///////
 // -----------------------------------------------------------------------------
-$site-footer-height: 11.5rem;
+$site-footer-height: 10rem;
 
 /////// Typography configuration ///////
 // -----------------------------------------------------------------------------
@@ -89,9 +89,9 @@ $large-screen: 80em;
 
 /////// Site Icons and Images ///////
 // -----------------------------------------------------------------------------
-$theme-images-directory: "/content/themes/penny4nasa/images";
+$aws-bucket: "https://s3.amazonaws.com/spaceadvocates";
 
-$image-moon-top: $theme-images-directory + "/moon-top.png";
+$image-moon-top: $aws-bucket + "/moon-top.png";
 
 $aspect-radio-1-1: 100%;
 $aspect-radio-2-1: 50%;
@@ -102,7 +102,7 @@ $aspect-radio-16-9: 56.25%;
 $hero-video-aspect-ratio: $aspect-radio-16-9;
 
 $base-background-images: (
-	stars: image-url("#{$theme-images-directory}/stars.svg"),
+	stars: image-url("#{$aws-bucket}/stars.svg"),
 	gradient: linear-gradient(top, $dark-blue, $black)
 );
 

@@ -49,11 +49,23 @@
 	.footer-link {
 		margin-bottom: 0.3em;
 	}
-	.copyright {
-		font-size: 0.9em;
-		padding-top: 2em;
+	p {
 		clear: both;
 		text-align: center;
+		margin-bottom: 0.5em;
+	}
+	.copyright {
+		font-size: 0.9em;
+	}
+	.contribute {
+		display: inline-block;
+		margin-left: 1em;
+		@extend %fa-github;
+
+		&:before {
+			@extend .#{$fa-css-prefix};
+			margin: 0.1em 0.5em;
+		}
 	}
 	.search-form {
 		@include span(last 12);
