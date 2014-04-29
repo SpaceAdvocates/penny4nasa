@@ -103,7 +103,7 @@
 						.x(function(d) { return x(d.date); })
 						.y(function(d) { return y(d.amount); });
 
-					d3.tsv('content/themes/penny4nasa/inc/budget-data.tsv', function (error, data) {
+					d3.tsv('<?php echo get_template_directory_uri(); ?>/inc/budget-data.tsv', function (error, data) {
 						data.forEach(function (d) {
 							d.date = parseDate(d.date);
 							d.amount = parseFloat(d.amount);

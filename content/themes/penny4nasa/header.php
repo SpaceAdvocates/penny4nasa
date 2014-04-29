@@ -10,7 +10,7 @@
 		<meta name="description" content="We strive to increase NASA's funding to 1% by encouraging popular support for NASA through education and outreach.">
 		<link rel="profile" href="http://gmpg.org/xfn/11">
 		<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
-		<link rel="icon shortcut" href="<?php echo esc_url( home_url() ); ?>/content/themes/penny4nasa/images/p4n-icon.ico">
+		<link rel="icon shortcut" href="<?php echo get_template_directory_uri(); ?>/images/p4n-icon.ico">
 
 		<title><?php wp_title( '|', true, 'right' ); ?></title>
 
