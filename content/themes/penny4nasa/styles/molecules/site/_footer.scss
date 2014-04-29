@@ -29,26 +29,6 @@
 	a {
 		@include clean-link;
 	}
-	.footer-column {
-		@include span(1 of 2);
-		margin-bottom: 2em;
-
-		@include susy-breakpoint(0 $small-screen, 12) {
-			&:last-of-type {
-				@include last;
-			}
-		}
-		@include susy-breakpoint($medium-screen, 12) {
-			@include span(3);
-		}
-
-		h2 {
-			margin-bottom: 1em;
-		}
-	}
-	.footer-link {
-		margin-bottom: 0.3em;
-	}
 	p {
 		clear: both;
 		text-align: center;
@@ -72,7 +52,7 @@
 		margin-bottom: 1em;
 
 		@include susy-breakpoint($medium-screen, 12) {
-			@include span(last 3);
+			@include span(last 4);
 		}
 
 		.search-submit {
@@ -86,16 +66,46 @@
 		margin-bottom: 1em;
 
 		@include susy-breakpoint($medium-screen, 12) {
-			@include span(3);
+			@include span(last 4);
 		}
 	}
-	.social-links {
-		@include span(last 12);
-		font-size: 1.2em;
-		margin-bottom: 1em;
+}
 
-		@include susy-breakpoint($medium-screen, 12) {
-			@include span(last 6);
+.site-footer--column {
+	margin-bottom: 2em;
+
+	@include susy-breakpoint(0 $small-screen, 12) {
+		@include span(4);
+	}
+	@include susy-breakpoint($medium-screen, 12) {
+		@include span(2);
+	}
+
+	h2 {
+		margin-bottom: 1em;
+	}
+}
+
+.site-footer--link {
+	margin-bottom: 0.3em;
+}
+
+.site-footer--follow {
+	@include span(last 4);
+	margin-bottom: 1em;
+
+	@include susy-breakpoint($medium-screen, 12) {
+		@include span(4);
+	}
+
+	.follow-links {
+		font-size: 1.2em;
+	}
+	.follow-link {
+		@include susy-breakpoint(0 $small-screen, 12) {
+			@include gallery(6);
+			font-size: 0.8em;
+			margin-bottom: 0.5em;
 		}
 	}
 }

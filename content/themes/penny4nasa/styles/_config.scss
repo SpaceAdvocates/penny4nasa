@@ -20,6 +20,7 @@ $twitter-color: #55acee;
 $google-plus-color: #dd4b39;
 $youtube-color: #bb0000;
 $github-color: #000000;
+$rss-color: #fa9b39;
 
 $primary-color: $dark-grey;
 $secondary-color: $grey;
@@ -125,4 +126,13 @@ $social-media-list: (
 	youtube: (
 		color: $youtube-color
 	)
-)
+);
+
+$social-follow-list: map_merge($social-media-list, (
+	github: (
+		color: $github-color
+	),
+	rss: (
+		color: $rss-color
+	)
+));

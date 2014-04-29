@@ -1,8 +1,3 @@
-/**
-Theme Name: Penny4NASA
-Theme Description: We strive to increase NASA’s funding to 1% by encouraging popular support for NASA through education and outreach.
-*/
-
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joseph\/\.rvm\/gems\/ruby-2\.0\.0-p247\/gems\/compass-core-1\.0\.0\.alpha\.19\/stylesheets\/compass\/reset\/_utilities\.scss}line{font-family:\000035}}
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -78,7 +73,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   font-style: normal;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joseph\/Development\/penny4nasa\/content\/themes\/penny4nasa\/bower_components\/font-awesome\/scss\/_core\.scss}line{font-family:\000034}}
-.fa, .button.-external:after, .button.-expand:after, .social-link a:before, .site-footer .contribute:before {
+.fa, .button.-external:after, .button.-expand:after, .social-link a:before, .follow-link a:before, .site-footer .contribute:before {
   display: inline-block;
   font-family: FontAwesome;
   font-style: normal;
@@ -157,28 +152,33 @@ body {
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joseph\/Development\/penny4nasa\/content\/themes\/penny4nasa\/styles\/utils\/_font-awesome\.scss}line{font-family:\000032}}
-.social-link.youtube a:before {
+.social-link.youtube a:before, .follow-link.youtube a:before {
   content: "\f167";
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joseph\/Development\/penny4nasa\/content\/themes\/penny4nasa\/styles\/utils\/_font-awesome\.scss}line{font-family:\000032}}
-.social-link.facebook a:before {
+.social-link.facebook a:before, .follow-link.facebook a:before {
   content: "\f09a";
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joseph\/Development\/penny4nasa\/content\/themes\/penny4nasa\/styles\/utils\/_font-awesome\.scss}line{font-family:\000032}}
-.social-link.twitter a:before {
+.social-link.twitter a:before, .follow-link.twitter a:before {
   content: "\f099";
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joseph\/Development\/penny4nasa\/content\/themes\/penny4nasa\/styles\/utils\/_font-awesome\.scss}line{font-family:\000032}}
-.social-link.google-plus a:before {
+.social-link.google-plus a:before, .follow-link.google-plus a:before {
   content: "\f0d5";
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joseph\/Development\/penny4nasa\/content\/themes\/penny4nasa\/styles\/utils\/_font-awesome\.scss}line{font-family:\000032}}
-.site-footer .contribute:before {
+.follow-link.github a:before, .site-footer .contribute:before {
   content: "\f09b";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joseph\/Development\/penny4nasa\/content\/themes\/penny4nasa\/styles\/utils\/_font-awesome\.scss}line{font-family:\000032}}
+.follow-link.rss a:before {
+  content: "\f09e";
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joseph\/Development\/penny4nasa\/content\/themes\/penny4nasa\/styles\/utils\/_sticky-footer\.scss}line{font-family:\000033}}
@@ -199,7 +199,7 @@ html, body {
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joseph\/Development\/penny4nasa\/content\/themes\/penny4nasa\/styles\/quarks\/_buttons\.scss}line{font-family:\000032}}
-.button.-cta, .button, [type="submit"], .social-link.facebook a, .social-link.twitter a, .social-link.google-plus a, .social-link.youtube a {
+.button.-cta, .button, [type="submit"], .social-link.facebook a, .social-link.twitter a, .social-link.google-plus a, .social-link.youtube a, .follow-link.facebook a, .follow-link.twitter a, .follow-link.google-plus a, .follow-link.youtube a, .follow-link.github a, .follow-link.rss a {
   color: inherit;
   text-decoration: none;
   display: block;
@@ -211,7 +211,7 @@ html, body {
   cursor: pointer;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joseph\/Development\/penny4nasa\/content\/themes\/penny4nasa\/styles\/quarks\/__mixins\.scss}line{font-family:\000035}}
-.button:hover, [type="submit"]:hover, .social-link.facebook a:hover, .social-link.twitter a:hover, .social-link.google-plus a:hover, .social-link.youtube a:hover {
+.button:hover, [type="submit"]:hover, .social-link.facebook a:hover, .social-link.twitter a:hover, .social-link.google-plus a:hover, .social-link.youtube a:hover, .follow-link.facebook a:hover, .follow-link.twitter a:hover, .follow-link.google-plus a:hover, .follow-link.youtube a:hover, .follow-link.github a:hover, .follow-link.rss a:hover {
   color: inherit;
   text-decoration: none;
 }
@@ -382,16 +382,16 @@ a:hover {
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joseph\/Development\/penny4nasa\/content\/themes\/penny4nasa\/styles\/quarks\/_lists\.scss}line{font-family:\000031}}
-.social-links {
+.social-links, .follow-links {
   list-style-type: none;
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joseph\/Development\/penny4nasa\/content\/themes\/penny4nasa\/styles\/quarks\/_lists\.scss}line{font-family:\000035}}
-.social-links {
+.social-links, .follow-links {
   overflow: hidden;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joseph\/Development\/penny4nasa\/content\/themes\/penny4nasa\/styles\/quarks\/_lists\.scss}line{font-family:\000038}}
-.social-links li {
+.social-links li, .follow-links li {
   float: left;
 }
 
@@ -716,24 +716,24 @@ strong {
   text-decoration: none;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joseph\/Development\/penny4nasa\/content\/themes\/penny4nasa\/styles\/molecules\/_social-links\.scss}line{font-family:\000035}}
-.social-link.facebook a, .social-link.twitter a, .social-link.google-plus a, .social-link.youtube a {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joseph\/Development\/penny4nasa\/content\/themes\/penny4nasa\/styles\/molecules\/_social-links\.scss}line{font-family:\0000334}}
+.social-links, .follow-links {
+  text-align: center;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joseph\/Development\/penny4nasa\/content\/themes\/penny4nasa\/styles\/molecules\/_social-links\.scss}line{font-family:\0000340}}
+.social-link.facebook a, .social-link.twitter a, .social-link.google-plus a, .social-link.youtube a, .follow-link.facebook a, .follow-link.twitter a, .follow-link.google-plus a, .follow-link.youtube a, .follow-link.github a, .follow-link.rss a {
   font-size: 1.5em;
   padding: 0.5em;
   display: inline-block;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joseph\/Development\/penny4nasa\/content\/themes\/penny4nasa\/styles\/molecules\/_social-links\.scss}line{font-family:\0000312}}
-.social-links {
-  text-align: center;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joseph\/Development\/penny4nasa\/content\/themes\/penny4nasa\/styles\/molecules\/_social-links\.scss}line{font-family:\0000318}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joseph\/Development\/penny4nasa\/content\/themes\/penny4nasa\/styles\/molecules\/_social-links\.scss}line{font-family:\0000351}}
 .social-link {
   width: 25%;
   float: right;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joseph\/Development\/penny4nasa\/content\/themes\/penny4nasa\/styles\/molecules\/_social-links\.scss}line{font-family:\0000325}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joseph\/Development\/penny4nasa\/content\/themes\/penny4nasa\/styles\/molecules\/_social-links\.scss}line{font-family:\0000312}}
 .social-link.facebook a {
   background-color: rgba(59, 89, 152, 0.8);
   color: #f7f7f7;
@@ -747,11 +747,11 @@ strong {
   background-color: #3b5998;
   color: #f7f7f7;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joseph\/Development\/penny4nasa\/content\/themes\/penny4nasa\/styles\/molecules\/_social-links\.scss}line{font-family:\0000330}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joseph\/Development\/penny4nasa\/content\/themes\/penny4nasa\/styles\/molecules\/_social-links\.scss}line{font-family:\0000317}}
 .social-link.facebook a:hover {
   background-color: #3b5998;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joseph\/Development\/penny4nasa\/content\/themes\/penny4nasa\/styles\/molecules\/_social-links\.scss}line{font-family:\0000325}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joseph\/Development\/penny4nasa\/content\/themes\/penny4nasa\/styles\/molecules\/_social-links\.scss}line{font-family:\0000312}}
 .social-link.twitter a {
   background-color: rgba(85, 172, 238, 0.8);
   color: #f7f7f7;
@@ -765,11 +765,11 @@ strong {
   background-color: #55acee;
   color: #f7f7f7;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joseph\/Development\/penny4nasa\/content\/themes\/penny4nasa\/styles\/molecules\/_social-links\.scss}line{font-family:\0000330}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joseph\/Development\/penny4nasa\/content\/themes\/penny4nasa\/styles\/molecules\/_social-links\.scss}line{font-family:\0000317}}
 .social-link.twitter a:hover {
   background-color: #55acee;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joseph\/Development\/penny4nasa\/content\/themes\/penny4nasa\/styles\/molecules\/_social-links\.scss}line{font-family:\0000325}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joseph\/Development\/penny4nasa\/content\/themes\/penny4nasa\/styles\/molecules\/_social-links\.scss}line{font-family:\0000312}}
 .social-link.google-plus a {
   background-color: rgba(221, 75, 57, 0.8);
   color: #f7f7f7;
@@ -783,11 +783,11 @@ strong {
   background-color: #dd4b39;
   color: #f7f7f7;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joseph\/Development\/penny4nasa\/content\/themes\/penny4nasa\/styles\/molecules\/_social-links\.scss}line{font-family:\0000330}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joseph\/Development\/penny4nasa\/content\/themes\/penny4nasa\/styles\/molecules\/_social-links\.scss}line{font-family:\0000317}}
 .social-link.google-plus a:hover {
   background-color: #dd4b39;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joseph\/Development\/penny4nasa\/content\/themes\/penny4nasa\/styles\/molecules\/_social-links\.scss}line{font-family:\0000325}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joseph\/Development\/penny4nasa\/content\/themes\/penny4nasa\/styles\/molecules\/_social-links\.scss}line{font-family:\0000312}}
 .social-link.youtube a {
   background-color: rgba(187, 0, 0, 0.8);
   color: #f7f7f7;
@@ -801,16 +801,139 @@ strong {
   background-color: #bb0000;
   color: #f7f7f7;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joseph\/Development\/penny4nasa\/content\/themes\/penny4nasa\/styles\/molecules\/_social-links\.scss}line{font-family:\0000330}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joseph\/Development\/penny4nasa\/content\/themes\/penny4nasa\/styles\/molecules\/_social-links\.scss}line{font-family:\0000317}}
 .social-link.youtube a:hover {
   background-color: #bb0000;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joseph\/Development\/penny4nasa\/content\/themes\/penny4nasa\/styles\/molecules\/_social-links\.scss}line{font-family:\0000336}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joseph\/Development\/penny4nasa\/content\/themes\/penny4nasa\/styles\/molecules\/_social-links\.scss}line{font-family:\0000323}}
 .social-link a {
   text-decoration: none;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joseph\/Development\/penny4nasa\/content\/themes\/penny4nasa\/styles\/molecules\/_social-links\.scss}line{font-family:\0000339}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joseph\/Development\/penny4nasa\/content\/themes\/penny4nasa\/styles\/molecules\/_social-links\.scss}line{font-family:\0000326}}
 .social-link a:before {
+  display: block;
+  width: 1em;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joseph\/Development\/penny4nasa\/content\/themes\/penny4nasa\/styles\/molecules\/_social-links\.scss}line{font-family:\0000359}}
+.follow-link {
+  width: 16.66667%;
+  float: right;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joseph\/Development\/penny4nasa\/content\/themes\/penny4nasa\/styles\/molecules\/_social-links\.scss}line{font-family:\0000312}}
+.follow-link.facebook a {
+  background-color: rgba(59, 89, 152, 0.8);
+  color: #f7f7f7;
+  -moz-transition: background-color 0.2s;
+  -o-transition: background-color 0.2s;
+  -webkit-transition: background-color 0.2s;
+  transition: background-color 0.2s;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joseph\/Development\/penny4nasa\/content\/themes\/penny4nasa\/styles\/quarks\/_buttons\.scss}line{font-family:\0000319}}
+.follow-link.facebook a:hover {
+  background-color: #3b5998;
+  color: #f7f7f7;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joseph\/Development\/penny4nasa\/content\/themes\/penny4nasa\/styles\/molecules\/_social-links\.scss}line{font-family:\0000317}}
+.follow-link.facebook a:hover {
+  background-color: #3b5998;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joseph\/Development\/penny4nasa\/content\/themes\/penny4nasa\/styles\/molecules\/_social-links\.scss}line{font-family:\0000312}}
+.follow-link.twitter a {
+  background-color: rgba(85, 172, 238, 0.8);
+  color: #f7f7f7;
+  -moz-transition: background-color 0.2s;
+  -o-transition: background-color 0.2s;
+  -webkit-transition: background-color 0.2s;
+  transition: background-color 0.2s;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joseph\/Development\/penny4nasa\/content\/themes\/penny4nasa\/styles\/quarks\/_buttons\.scss}line{font-family:\0000319}}
+.follow-link.twitter a:hover {
+  background-color: #55acee;
+  color: #f7f7f7;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joseph\/Development\/penny4nasa\/content\/themes\/penny4nasa\/styles\/molecules\/_social-links\.scss}line{font-family:\0000317}}
+.follow-link.twitter a:hover {
+  background-color: #55acee;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joseph\/Development\/penny4nasa\/content\/themes\/penny4nasa\/styles\/molecules\/_social-links\.scss}line{font-family:\0000312}}
+.follow-link.google-plus a {
+  background-color: rgba(221, 75, 57, 0.8);
+  color: #f7f7f7;
+  -moz-transition: background-color 0.2s;
+  -o-transition: background-color 0.2s;
+  -webkit-transition: background-color 0.2s;
+  transition: background-color 0.2s;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joseph\/Development\/penny4nasa\/content\/themes\/penny4nasa\/styles\/quarks\/_buttons\.scss}line{font-family:\0000319}}
+.follow-link.google-plus a:hover {
+  background-color: #dd4b39;
+  color: #f7f7f7;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joseph\/Development\/penny4nasa\/content\/themes\/penny4nasa\/styles\/molecules\/_social-links\.scss}line{font-family:\0000317}}
+.follow-link.google-plus a:hover {
+  background-color: #dd4b39;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joseph\/Development\/penny4nasa\/content\/themes\/penny4nasa\/styles\/molecules\/_social-links\.scss}line{font-family:\0000312}}
+.follow-link.youtube a {
+  background-color: rgba(187, 0, 0, 0.8);
+  color: #f7f7f7;
+  -moz-transition: background-color 0.2s;
+  -o-transition: background-color 0.2s;
+  -webkit-transition: background-color 0.2s;
+  transition: background-color 0.2s;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joseph\/Development\/penny4nasa\/content\/themes\/penny4nasa\/styles\/quarks\/_buttons\.scss}line{font-family:\0000319}}
+.follow-link.youtube a:hover {
+  background-color: #bb0000;
+  color: #f7f7f7;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joseph\/Development\/penny4nasa\/content\/themes\/penny4nasa\/styles\/molecules\/_social-links\.scss}line{font-family:\0000317}}
+.follow-link.youtube a:hover {
+  background-color: #bb0000;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joseph\/Development\/penny4nasa\/content\/themes\/penny4nasa\/styles\/molecules\/_social-links\.scss}line{font-family:\0000312}}
+.follow-link.github a {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #f7f7f7;
+  -moz-transition: background-color 0.2s;
+  -o-transition: background-color 0.2s;
+  -webkit-transition: background-color 0.2s;
+  transition: background-color 0.2s;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joseph\/Development\/penny4nasa\/content\/themes\/penny4nasa\/styles\/quarks\/_buttons\.scss}line{font-family:\0000319}}
+.follow-link.github a:hover {
+  background-color: black;
+  color: #f7f7f7;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joseph\/Development\/penny4nasa\/content\/themes\/penny4nasa\/styles\/molecules\/_social-links\.scss}line{font-family:\0000317}}
+.follow-link.github a:hover {
+  background-color: black;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joseph\/Development\/penny4nasa\/content\/themes\/penny4nasa\/styles\/molecules\/_social-links\.scss}line{font-family:\0000312}}
+.follow-link.rss a {
+  background-color: rgba(250, 155, 57, 0.8);
+  color: #f7f7f7;
+  -moz-transition: background-color 0.2s;
+  -o-transition: background-color 0.2s;
+  -webkit-transition: background-color 0.2s;
+  transition: background-color 0.2s;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joseph\/Development\/penny4nasa\/content\/themes\/penny4nasa\/styles\/quarks\/_buttons\.scss}line{font-family:\0000319}}
+.follow-link.rss a:hover {
+  background-color: #fa9b39;
+  color: #f7f7f7;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joseph\/Development\/penny4nasa\/content\/themes\/penny4nasa\/styles\/molecules\/_social-links\.scss}line{font-family:\0000317}}
+.follow-link.rss a:hover {
+  background-color: #fa9b39;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joseph\/Development\/penny4nasa\/content\/themes\/penny4nasa\/styles\/molecules\/_social-links\.scss}line{font-family:\0000323}}
+.follow-link a {
+  text-decoration: none;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joseph\/Development\/penny4nasa\/content\/themes\/penny4nasa\/styles\/molecules\/_social-links\.scss}line{font-family:\0000326}}
+.follow-link a:before {
   display: block;
   width: 1em;
 }
@@ -989,73 +1112,43 @@ strong {
   text-decoration: none;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joseph\/Development\/penny4nasa\/content\/themes\/penny4nasa\/styles\/molecules\/site\/_footer\.scss}line{font-family:\0000332}}
-.site-footer .footer-column {
-  width: 44.44444%;
-  float: left;
-  margin-right: 11.11111%;
-  margin-bottom: 2em;
-}
-@media (min-width: 0) and (max-width: 48em) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joseph\/Development\/penny4nasa\/content\/themes\/penny4nasa\/styles\/molecules\/site\/_footer\.scss}line{font-family:\0000337}}
-  .site-footer .footer-column:last-of-type {
-    float: right;
-    margin-right: 0;
-  }
-}
-@media (min-width: 48em) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joseph\/Development\/penny4nasa\/content\/themes\/penny4nasa\/styles\/molecules\/site\/_footer\.scss}line{font-family:\0000332}}
-  .site-footer .footer-column {
-    width: 23.72881%;
-    float: left;
-    margin-right: 1.69492%;
-  }
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joseph\/Development\/penny4nasa\/content\/themes\/penny4nasa\/styles\/molecules\/site\/_footer\.scss}line{font-family:\0000345}}
-.site-footer .footer-column h2 {
-  margin-bottom: 1em;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joseph\/Development\/penny4nasa\/content\/themes\/penny4nasa\/styles\/molecules\/site\/_footer\.scss}line{font-family:\0000349}}
-.site-footer .footer-link {
-  margin-bottom: 0.3em;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joseph\/Development\/penny4nasa\/content\/themes\/penny4nasa\/styles\/molecules\/site\/_footer\.scss}line{font-family:\0000352}}
 .site-footer p {
   clear: both;
   text-align: center;
   margin-bottom: 0.5em;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joseph\/Development\/penny4nasa\/content\/themes\/penny4nasa\/styles\/molecules\/site\/_footer\.scss}line{font-family:\0000357}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joseph\/Development\/penny4nasa\/content\/themes\/penny4nasa\/styles\/molecules\/site\/_footer\.scss}line{font-family:\0000337}}
 .site-footer .copyright {
   font-size: 0.9em;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joseph\/Development\/penny4nasa\/content\/themes\/penny4nasa\/styles\/molecules\/site\/_footer\.scss}line{font-family:\0000360}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joseph\/Development\/penny4nasa\/content\/themes\/penny4nasa\/styles\/molecules\/site\/_footer\.scss}line{font-family:\0000340}}
 .site-footer .contribute {
   display: inline-block;
   margin-left: 1em;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joseph\/Development\/penny4nasa\/content\/themes\/penny4nasa\/styles\/molecules\/site\/_footer\.scss}line{font-family:\0000365}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joseph\/Development\/penny4nasa\/content\/themes\/penny4nasa\/styles\/molecules\/site\/_footer\.scss}line{font-family:\0000345}}
 .site-footer .contribute:before {
   margin: 0.1em 0.5em;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joseph\/Development\/penny4nasa\/content\/themes\/penny4nasa\/styles\/molecules\/site\/_footer\.scss}line{font-family:\0000370}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joseph\/Development\/penny4nasa\/content\/themes\/penny4nasa\/styles\/molecules\/site\/_footer\.scss}line{font-family:\0000350}}
 .site-footer .search-form {
   width: 100%;
   float: right;
   margin-bottom: 1em;
 }
 @media (min-width: 48em) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joseph\/Development\/penny4nasa\/content\/themes\/penny4nasa\/styles\/molecules\/site\/_footer\.scss}line{font-family:\0000370}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joseph\/Development\/penny4nasa\/content\/themes\/penny4nasa\/styles\/molecules\/site\/_footer\.scss}line{font-family:\0000350}}
   .site-footer .search-form {
-    width: 23.72881%;
+    width: 32.20339%;
     float: right;
   }
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joseph\/Development\/penny4nasa\/content\/themes\/penny4nasa\/styles\/molecules\/site\/_footer\.scss}line{font-family:\0000378}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joseph\/Development\/penny4nasa\/content\/themes\/penny4nasa\/styles\/molecules\/site\/_footer\.scss}line{font-family:\0000358}}
 .site-footer .search-form .search-submit {
   padding-left: 0;
   padding-right: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joseph\/Development\/penny4nasa\/content\/themes\/penny4nasa\/styles\/molecules\/site\/_footer\.scss}line{font-family:\0000383}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joseph\/Development\/penny4nasa\/content\/themes\/penny4nasa\/styles\/molecules\/site\/_footer\.scss}line{font-family:\0000363}}
 .site-footer .cta-link {
   width: 100%;
   float: right;
@@ -1063,25 +1156,81 @@ strong {
   margin-bottom: 1em;
 }
 @media (min-width: 48em) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joseph\/Development\/penny4nasa\/content\/themes\/penny4nasa\/styles\/molecules\/site\/_footer\.scss}line{font-family:\0000383}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joseph\/Development\/penny4nasa\/content\/themes\/penny4nasa\/styles\/molecules\/site\/_footer\.scss}line{font-family:\0000363}}
   .site-footer .cta-link {
-    width: 23.72881%;
+    width: 32.20339%;
+    float: right;
+  }
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joseph\/Development\/penny4nasa\/content\/themes\/penny4nasa\/styles\/molecules\/site\/_footer\.scss}line{font-family:\0000374}}
+.site-footer--column {
+  margin-bottom: 2em;
+}
+@media (min-width: 0) and (max-width: 48em) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joseph\/Development\/penny4nasa\/content\/themes\/penny4nasa\/styles\/molecules\/site\/_footer\.scss}line{font-family:\0000374}}
+  .site-footer--column {
+    width: 32.20339%;
     float: left;
     margin-right: 1.69492%;
   }
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joseph\/Development\/penny4nasa\/content\/themes\/penny4nasa\/styles\/molecules\/site\/_footer\.scss}line{font-family:\0000392}}
-.site-footer .social-links {
-  width: 100%;
+@media (min-width: 48em) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joseph\/Development\/penny4nasa\/content\/themes\/penny4nasa\/styles\/molecules\/site\/_footer\.scss}line{font-family:\0000374}}
+  .site-footer--column {
+    width: 15.25424%;
+    float: left;
+    margin-right: 1.69492%;
+  }
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joseph\/Development\/penny4nasa\/content\/themes\/penny4nasa\/styles\/molecules\/site\/_footer\.scss}line{font-family:\0000384}}
+.site-footer--column h2 {
+  margin-bottom: 1em;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joseph\/Development\/penny4nasa\/content\/themes\/penny4nasa\/styles\/molecules\/site\/_footer\.scss}line{font-family:\0000389}}
+.site-footer--link {
+  margin-bottom: 0.3em;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joseph\/Development\/penny4nasa\/content\/themes\/penny4nasa\/styles\/molecules\/site\/_footer\.scss}line{font-family:\0000393}}
+.site-footer--follow {
+  width: 32.20339%;
   float: right;
-  font-size: 1.2em;
   margin-bottom: 1em;
 }
 @media (min-width: 48em) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joseph\/Development\/penny4nasa\/content\/themes\/penny4nasa\/styles\/molecules\/site\/_footer\.scss}line{font-family:\0000392}}
-  .site-footer .social-links {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joseph\/Development\/penny4nasa\/content\/themes\/penny4nasa\/styles\/molecules\/site\/_footer\.scss}line{font-family:\0000393}}
+  .site-footer--follow {
+    width: 32.20339%;
+    float: left;
+    margin-right: 1.69492%;
+  }
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joseph\/Development\/penny4nasa\/content\/themes\/penny4nasa\/styles\/molecules\/site\/_footer\.scss}line{font-family:\00003101}}
+.site-footer--follow .follow-links {
+  font-size: 1.2em;
+}
+@media (min-width: 0) and (max-width: 48em) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joseph\/Development\/penny4nasa\/content\/themes\/penny4nasa\/styles\/molecules\/site\/_footer\.scss}line{font-family:\00003104}}
+  .site-footer--follow .follow-link {
     width: 49.15254%;
-    float: right;
+    float: left;
+    font-size: 0.8em;
+    margin-bottom: 0.5em;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joseph\/Development\/penny4nasa\/content\/themes\/penny4nasa\/bower_components\/susy\/sass\/susy\/language\/susy\/_gallery\.scss}line{font-family:\0000363}}
+  .site-footer--follow .follow-link:nth-child(2n + 1) {
+    margin-left: 0;
+    margin-right: -100%;
+    clear: both;
+    margin-left: 0;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joseph\/Development\/penny4nasa\/content\/themes\/penny4nasa\/bower_components\/susy\/sass\/susy\/language\/susy\/_gallery\.scss}line{font-family:\0000363}}
+  .site-footer--follow .follow-link:nth-child(2n + 2) {
+    margin-left: 50.84746%;
+    margin-right: -100%;
+    clear: none;
   }
 }
 

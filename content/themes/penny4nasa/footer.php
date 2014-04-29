@@ -4,31 +4,54 @@
 		<footer class="site-footer" role="contentinfo">
 			<div class="content">
 				<div class="container">
-					<div class="footer-column">
+					<div class="site-footer--column">
 						<h2>About</h2>
-						<ul class="footer-links">
-							<li class="footer-link">
+						<ul class="site-footer--links">
+							<li class="site-footer--link">
 								<a href="/about">About</a>
 							</li>
-							<li class="footer-link">
+							<li class="site-footer--link">
 								<a href="/partners">Partners</a>
 							</li>
-							<li class="footer-link">
+							<li class="site-footer--link">
 								<a href="/contact">Contact</a>
 							</li>
 						</ul>
 					</div>
-					<div class="footer-column">
+					<div class="site-footer--column">
 						<h2>Resources</h2>
-						<ul class="footer-links">
-							<li class="footer-link">
+						<ul class="site-footer--links">
+							<li class="site-footer--link">
 								<a href="/faq">FAQ</a>
 							</li>
-							<li class="footer-link">
+							<li class="site-footer--link">
 								<a href="/press">Press Room</a>
 							</li>
-							<li class="footer-link">
+							<li class="site-footer--link">
 								<a href="/privacy-policy">Privacy Policy</a>
+							</li>
+						</ul>
+					</div>
+					<div class="site-footer--follow">
+						<h2>Follow Us</h2>
+						<ul class="follow-links">
+							<li class="follow-link facebook">
+								<a href="//www.facebook.com/PennyForNASA"></a>
+							</li>
+							<li class="follow-link twitter">
+								<a href="//twitter.com/Penny4NASA1"></a>
+							</li>
+							<li class="follow-link google-plus">
+								<a href="//plus.google.com/104209973472169534234/posts"></a>
+							</li>
+							<li class="follow-link youtube">
+								<a href="//www.youtube.com/Penny4NASA"></a>
+							</li>
+							<li class="follow-link github">
+								<a href="//github.com/SpaceAdvocates"></a>
+							</li>
+							<li class="follow-link rss">
+								<a href="/feed"></a>
 							</li>
 						</ul>
 					</div>
@@ -36,23 +59,9 @@
 					<a class="cta-link button -cta" href="/take-action">
 						Take Action
 					</a>
-					<ul class="social-links">
-						<li class="social-link facebook">
-							<a href="//www.facebook.com/PennyForNASA"></a>
-						</li>
-						<li class="social-link twitter">
-							<a href="//twitter.com/Penny4NASA1"></a>
-						</li>
-						<li class="social-link google-plus">
-							<a href="//plus.google.com/104209973472169534234/posts"></a>
-						</li>
-						<li class="social-link youtube">
-							<a href="//www.youtube.com/Penny4NASA"></a>
-						</li>
-					</ul>
 					<p class="copyright">
 						&copy; 2014 Space Advocates. All rights reserved.
-						<a class="contribute" href="https://github.com/SpaceAdvocates">Contribute to Space Advocates Engineering!</a>
+						<a class="contribute" href="//github.com/SpaceAdvocates">Contribute to Space Advocates Engineering!</a>
 					</p>
 				</div>
 			</div>

@@ -2,24 +2,11 @@
 $social-link-size: 0.5em;
 
 // Helpers
-%social-link {
-	font-size: 1em + $social-link-size;
-	padding: 1em - $social-link-size;
-	display: inline-block;
-}
+@mixin social-link($map) {
+	@include span(last (100% / length($map)));
 
-// Styles
-.social-links {
-	@extend %clean-list;
-	@extend %horizontal-list;
-	text-align: center;
-}
-
-.social-link {
-	@include span(last (100% / length($social-media-list)));
-
-	@each $service, $properties in $social-media-list {
-		$service-color: map-get($properties, color);
+	@each $service, $properties in $map {
+		$service-color: map_get($properties, color);
 
 		&.#{$service} {
 			a {
@@ -42,4 +29,33 @@ $social-link-size: 0.5em;
 			width: 1em;
 		}
 	}
+}
+
+%social-links {
+	@extend %clean-list;
+	@extend %horizontal-list;
+	text-align: center;
+}
+
+%social-link {
+	font-size: 1em + $social-link-size;
+	padding: 1em - $social-link-size;
+	display: inline-block;
+}
+
+// Styles
+.social-links {
+	@extend %social-links;
+}
+
+.social-link {
+	@include social-link($social-media-list);
+}
+
+.follow-links {
+	@extend %social-links;
+}
+
+.follow-link {
+	@include social-link($social-follow-list);
 }
