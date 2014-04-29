@@ -2,8 +2,11 @@
 	@extend %hero;
 
 	.video {
-		@include center-columns(10);
 		position: relative;
+
+		@include susy-breakpoint($medium-screen, 12) {
+			@include center-columns(10);
+		}
 
 		&:before {
 			content: "";
