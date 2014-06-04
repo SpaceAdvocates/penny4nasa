@@ -1,0 +1,60 @@
+// Make sure the charset is set appropriately
+@charset "UTF-8";
+
+// App Config - this is where most of the magic will happen
+// ------------------------------------------------------------------------------
+@import "config";
+
+// CSS Normalize
+// ------------------------------------------------------------------------------
+
+// Compass Libraries
+// ------------------------------------------------------------------------------
+@import "compass/css3";
+@import "compass/reset";
+
+// Vendor Libraries
+// ------------------------------------------------------------------------------
+@import "../bower_components/font-awesome/scss/variables";
+@import "../bower_components/font-awesome/scss/path";
+@import "../bower_components/font-awesome/scss/core";
+@import "../bower_components/font-awesome/scss/list";
+@import "../bower_components/breakpoint-sass/stylesheets/breakpoint";
+@import "../bower_components/susy/sass/susy";
+
+// Web fonts
+// ------------------------------------------------------------------------------
+
+// Images
+// ------------------------------------------------------------------------------
+
+// Custom styles
+// ------------------------------------------------------------------------------
+
+//// Scaffolding
+// Helper classes and mixins
+@import "scaffolding/base";
+
+//// Utils
+// Helper classes and mixins
+@import "utils/**/*";
+
+//// Quarks
+// These are basic HTML element styles
+@import "quarks/**/*";
+
+//// Atoms
+// Combinations of quarks, small regions of a view
+@import "atoms/**/*";
+
+//// Molecules
+// Combinations of quarks and atoms, medium to large regions of a view
+@import "molecules/**/*";
+
+//// Templates
+// Cluster of pages
+@import "templates/**/*";
+
+//// Pages
+// Page specific styling
+@import "pages/**/*";

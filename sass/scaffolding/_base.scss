@@ -1,0 +1,24 @@
+@include border-box-sizing;
+
+body {
+	font-size: $small-font-size;
+	line-height: $base-line-height;
+	font-family: $default-font-family;
+	background: $dark-blue;
+	color: $light-text-color;
+
+	@include susy-breakpoint($medium-screen, 12) {
+		font-size: $base-font-size;
+	}
+}
+
+.wrapper {
+	@extend %sticky-wrapper;
+	background: map-get($base-background-images, stars), map-get($base-background-images, gradient);
+}
+
+.container {
+	@include container($large-screen);
+	padding-left: 1em;
+	padding-right: 1em;
+}

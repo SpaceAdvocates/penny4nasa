@@ -10,39 +10,35 @@ We uphold the importance of NASA by highlighting scientific exploration, researc
 
 See the [contributing docs](http://github.com/SpaceAdvocates/penny4nasa/blob/master/contributing.md)
 
-This site is made with [WordPress](http://wordpress.org/) and [YeoPress](https://github.com/wesleytodd/YeoPress).
+This site is made with [WordPress](http://wordpress.org/).
 
-Assumptions:
+### Quick Start
 
-**1\.** You already have [MAMP](http://www.mamp.info/en/) or some other tool setup, or you're familiar with setting up your local dev environment some other way.
+Dependancies:
 
-**2\.** You are familiar with using [mysqldump](https://dev.mysql.com/doc/refman/5.1/en/mysqldump.html) and [importing that dump](http://www.cyberciti.biz/faq/import-mysql-dumpfile-sql-datafile-into-my-database/) to your local machine.
+* You already have [MAMP](http://www.mamp.info/en/) or some other tool setup, or you're familiar with setting up your local dev environment some other way.
+* You are familiar with using [mysqldump](https://dev.mysql.com/doc/refman/5.1/en/mysqldump.html) and [importing that dump](http://www.cyberciti.biz/faq/import-mysql-dumpfile-sql-datafile-into-my-database/) to your local machine.
+* Node and Ruby are installed on your machine.
 
+1. [Download](http://wordpress.org/latest.zip) and install Wordpress
+2. Navigate into the themes directory of your Wordpress installation
+3. Clone the repo `git clone https://github.com/SpaceAdvocates/penny4nasa`
+4. Install node tools for development `npm install`
+5. Install front end packages `bower install`
+6. Run grunt to watch for changes `grunt serve`
+7. Start hacking :)
 
-To get started:
+### Issue submission
 
-**1\.** Clone the repository and its submodules:
+In order for us to help you please check that you've completed the following steps:
 
-```bash
-git clone --recursive https://github.com/SpaceAdvocates/penny4nasa
-cd penny4nasa
-```
+* Made sure you're in a supported environment (Chrome, Firefox, Safari)
+* Check the issues queue to ensure that the bug hasn't been reported before
+* Included as much information about the bug as possible, including any screenshots, what OS/browser and version you're on, etc.
 
-**2\.** Install all modules and needed tools
+[Submit your issue](https://github.com/SpaceAdvocates/penny4nasa/issues/new)
 
-```bash
-npm install
-bower install
-```
-
-**3\.** Create a local-config.php file to allow wordpress to access your MySQL database (Hint: [sample-local-config.php](https://gist.github.com/JohnLZeller/10080298)):
-
-```bash
-vim local-config.php
-```
-
-
-Now you're ready to do some work!
+You can keep the various repos up to date by running `git pull --rebase upstream master` in each.
 
 ## Channel Open
 

@@ -7,9 +7,6 @@ node_modules
 .sass-cache
 .tmp
 
-# Ignore config
-local-config.php
-
 # Operating system files
 .Spotlight-V100
 .Trashes
@@ -20,22 +17,6 @@ Thumbs.db
 
 # Vagrant
 .vagrant
-
-# WordPress + popular plugin generated — adapted from:
-# https://github.com/github/gitignore/blob/master/WordPress.gitignore
-local-config.php
-sitemap.xml
-sitemap.xml.gz
-content/advanced-cache.php
-content/backup-db/
-content/backups/
-content/blogs.dir/
-content/cache/
-content/index.php
-content/themes/index.php
-content/uploads/
-content/upgrade/
-content/wp-cache-config.php
 
 # Editor files
 *.sublime*
